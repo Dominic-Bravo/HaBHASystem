@@ -9,7 +9,6 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace HaBHADbMauiApp.Services
 {
@@ -20,6 +19,60 @@ namespace HaBHADbMauiApp.Services
         public TenantService(IHttpClientFactory httpClientFactory)
         {
             this.httpClientFactory = httpClientFactory ?? throw new ArgumentNullException(nameof(httpClientFactory));
+        }
+
+        public async Task<bool> UploadWithJsonImageAsync(AppImage appImage, byte[] imageBytes)
+        {
+            if (appImage == null)
+            {
+                await Shell.Current.DisplayAlert("Error", "AppImage object is null.", "OK");
+                return false;
+            }
+
+            if (imageBytes == null || imageBytes.Length == 0)
+            {
+                await Shell.Current.DisplayAlert("Error", "Image bytes are invalid.", "OK");
+                return false;
+            }
+
+            var httpClient = httpClientFactory?.CreateClient("custom-httpclient");
+            if (httpClient == null)
+            {
+                await Shell.Current.DisplayAlert("Error", "HttpClient could not be created.", "OK");
+                return false;
+            }
+
+            try
+            {
+                var content = new MultipartFormDataContent();
+
+                var jsonString = JsonConvert.SerializeObject(appImage);
+                var jsonContent = new StringContent(jsonString, Encoding.UTF8, "application/json");
+
+                content.Add(jsonContent, "request");
+
+                var imageContent = new ByteArrayContent(imageBytes);
+                imageContent.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg");
+                content.Add(imageContent, "image", "filename.jpg");
+
+                var response = await httpClient.PostAsync("/api/AppImage/JsonAddImages", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+                else
+                {
+                    var errorMessage = await response.Content.ReadAsStringAsync();
+                    await Shell.Current.DisplayAlert("Error", $"Failed to upload image: {errorMessage}", "OK");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
+                return false;
+            }
         }
 
         public async Task<bool> AddOwnerBoardingHouseAsync(BoardingHouse boardingHouse, string? token)

@@ -32,9 +32,10 @@ public partial class CustomizeBoardingHousePage : ContentPage
         LoadAmeitiesLists();
         //LoadImagesAsync();
         LoadBoarders();
+        loadImage();
     }
 
-    private async void OnLoadImagesClicked(object sender, EventArgs e)
+    private async Task loadImage()
     {
         int boardinghouseId = _boardingHouse.BoardinghouseId;
 
@@ -45,7 +46,9 @@ public partial class CustomizeBoardingHousePage : ContentPage
         }
 
         try
-        {
+        
+            // error pa ga stuck and url
+
             string apiUrl = $"https://habhaaa-001-site1.qtempurl.com/api/AppImage/GetImagesByBoardinghouseId/{boardinghouseId}";
             HttpResponseMessage response = await _httpClient.GetAsync(apiUrl);
 
@@ -61,7 +64,7 @@ public partial class CustomizeBoardingHousePage : ContentPage
             _images.Clear();
             foreach (var img in images)
             {
-                img.ImageSource = ImageSource.FromStream(() => new MemoryStream(img.ImageData)); 
+                img.ImageSource = ImageSource.FromStream(() => new MemoryStream(img.ImageData));
                 _images.Add(img);
             }
         }
@@ -449,138 +452,180 @@ public partial class CustomizeBoardingHousePage : ContentPage
         }
     }
 
+    // https://habhaaa-001-site1.qtempurl.com/api/AppImage/JsonAddImages
 
     private async void OnUploadImage_Clicked(object sender, EventArgs e)
     {
-        try
+        var appImage = new AppImage
         {
-            if (_imageBytes == null || _imageBytes.Length == 0)
-            {
-                await DisplayAlert("Error", "No image selected. Please pick an image first.", "OK");
-                return;
-            }
+            Description = "Sample image description",
+            ImageData = _imageBytes,
+            BoardinghouseId = _boardingHouse.BoardinghouseId,
+            QRCodeImageId = null,
+            UserId = null
+        };
+        // Tenant service
+        bool uploadSuccessful = await _tenantService.UploadWithJsonImageAsync(appImage, _imageBytes);
 
-            //int boardinghouseId = _boardingHouse?.BoardinghouseId ?? 0;
-            //int? qrCodeImageId = null; // Modify if needed
-            //string userId = null; // Set to actual UserId
-            //string description = "Your image description"; // Modify accordingly
-
-            var appImage = new AppImage
-            {
-                BoardinghouseId = _boardingHouse?.BoardinghouseId,
-                QRCodeImageId = null,
-                UserId = null, // Set to null
-                Description = "new",
-                ImageData = _imageBytes
-            };
-
-            await DisplayAlert("Title", $"boardid {_boardingHouse.BoardinghouseId}", "Ok");
-
-            using (var content = new MultipartFormDataContent())
-            {
-                // Add metadata
-                //content.Add(new StringContent(boardinghouseId.ToString()), "boardinghouseId");
-                //content.Add(new StringContent(qrCodeImageId?.ToString() ?? string.Empty), "qrCodeImageId");
-                //content.Add(new StringContent(userId), "userId");
-                //content.Add(new StringContent(description), "description");
-
-                if (_boardingHouse?.BoardinghouseId > 0) 
-                    content.Add(new StringContent(_boardingHouse.BoardinghouseId.ToString()), "boardinghouseId");
-
-                if (appImage.QRCodeImageId.HasValue)
-                    content.Add(new StringContent(appImage.QRCodeImageId.Value.ToString()), "qrCodeImageId");
-
-                if (!string.IsNullOrEmpty(appImage.Description))
-                    content.Add(new StringContent(appImage.Description), "description");
-
-                // Add the image file
-                var fileContent = new ByteArrayContent(_imageBytes);
-                fileContent.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg"); // Adjust based on image type
-                content.Add(fileContent, "image", "upload.jpg"); // Change filename if needed
-
-                // Send the request
-                using var httpClient = new HttpClient();
-                var response = await httpClient.PostAsync("https://habhaaa-001-site1.qtempurl.com/api/AppImage/AddImages", content);
-
-                string responseContent = await response.Content.ReadAsStringAsync();
-
-                if (response.IsSuccessStatusCode)
-                {
-                    await DisplayAlert("Success", $"Image uploaded successfully! Server Response: {responseContent}", "OK");
-                }
-                else
-                {
-                    await DisplayAlert("Error", $"Upload failed! Status: {response.StatusCode}, Message: {responseContent}", "OK");
-                }
-            }
-        }
-        catch (Exception ex)
+        if (uploadSuccessful)
         {
-            await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
+            Console.WriteLine("Image uploaded successfully!");
         }
-        //try
-        //{
-        //    // Assuming you already have _boardingHouse and _imageBytes
-        //    //int id = _boardingHouse.BoardinghouseId;  // BoardinghouseId from the selected boarding house
-        //    //var imageByteArray = _imageBytes;         // Image byte array from the selected image
-
-        //    var appImage = new AppImage
-        //    {
-        //        BoardinghouseId = _boardingHouse.BoardinghouseId,  
-        //        QRCodeImageId = null, 
-        //        UserId = "", 
-        //        Description = "", 
-        //        ImageData = _imageBytes 
-        //    };
-
-        //    int boardinghouseId = appImage.BoardinghouseId ?? 0; 
-        //    byte[] imageByteArray = _imageBytes; 
-        //    string userId = appImage.UserId;
-        //    string description = appImage.Description;
-
-        //    if (imageByteArray == null || imageByteArray.Length == 0)
-        //    {
-        //        await DisplayAlert("Error", "No image selected.", "OK");
-        //        return;
-        //    }
-
-        //    using (var content = new MultipartFormDataContent())
-        //    {
-        //        // Ensure you're using the correct variables here
-        //        //content.Add(new StringContent(appImage.BoardinghouseId?.ToString() ?? string.Empty), "boardinghouseId");
-        //        //content.Add(new StringContent(appImage.QRCodeImageId?.ToString() ?? string.Empty), "qrCodeImageId");
-        //        //content.Add(new StringContent(appImage.UserId), "userId");
-        //        //content.Add(new StringContent(appImage.Description), "description");
-        //        content.Add(new StringContent(boardinghouseId.ToString()), "boardinghouseId");
-        //        content.Add(new StringContent(appImage.QRCodeImageId?.ToString() ?? string.Empty), "qrCodeImageId");
-        //        content.Add(new StringContent(userId), "userId");
-        //        content.Add(new StringContent(description), "description");
-
-        //        // Prepare the image byte array for uploading
-        //        var fileContent = new ByteArrayContent(imageByteArray);
-        //        fileContent.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg");  // Adjust the content type based on your image format
-        //        content.Add(fileContent, "image", "image.jpg");  // Adjust filename if needed
-
-        //        // Make the POST request to the API
-        //        var response = await _httpClient.PostAsync("https://habhaaa-001-site1.qtempurl.com/api/AppImage/AddImages", content);
-
-        //        // Handle the response from the server
-        //        if (response.IsSuccessStatusCode)
-        //        {
-        //            await DisplayAlert("Success", "Image uploaded successfully!", "OK");
-        //        }
-        //        else
-        //        {
-        //            await DisplayAlert("Error", "Image upload failed.", "OK");
-        //        }
-        //    }
-        //}
-        //catch (Exception ex)
-        //{
-        //    // Handle exceptions
-        //    await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
-        //}
+        else
+        {
+            Console.WriteLine("Failed to upload image.");
+        }
     }
+
+    //private async void OnUploadImage_Clicked(object sender, EventArgs e)
+    //{
+    //    try
+    //    {
+    //        // Create the JSON data
+    //        var appImage = new AppImage
+    //        {
+    //            BoardinghouseId = _boardingHouse?.BoardinghouseId,
+    //            QRCodeImageId = null,
+    //            UserId = null,
+    //            Description = "new"
+    //        };
+
+    //        // Convert AppImage object to JSON string
+    //        string json = JsonSerializer.Serialize(appImage);
+
+    //        // Prepare multipart form-data content
+    //        var imageContent = new MultipartFormDataContent();
+
+    //        // Add image file as part of the request
+    //        using (var fileStream = new FileStream("path_to_image.jpg", FileMode.Open, FileAccess.Read))
+    //        {
+    //            var fileContent = new StreamContent(fileStream);
+    //            fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("image/jpeg"); // Adjust as per image type
+    //            imageContent.Add(fileContent, "image", "image.jpg");
+    //        }
+
+    //        // Add the JSON data as another part of the form-data
+    //        imageContent.Add(new StringContent(json, Encoding.UTF8, "application/json"), "request");
+
+    //        // Send the request using HttpClient
+    //        using var httpClient = new HttpClient();
+    //        var response = await httpClient.PostAsync("https://habhaaa-001-site1.qtempurl.com/api/AppImage/JsonAddImages", imageContent);
+
+    //        // Read and handle the response
+    //        string responseContent = await response.Content.ReadAsStringAsync();
+
+    //        if (response.IsSuccessStatusCode)
+    //        {
+    //            await DisplayAlert("Success", "Image uploaded successfully!", "OK");
+    //        }
+    //        else
+    //        {
+    //            await DisplayAlert("Error", $"Upload failed! Status: {response.StatusCode}, Message: {responseContent}", "OK");
+    //        }
+
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
+    //    }
+    //    //try
+    //    //{
+    //    //    string base64Image = Convert.ToBase64String(_imageBytes);
+
+    //    //    var appImage = new
+    //    //    {
+    //    //        BoardinghouseId = _boardingHouse?.BoardinghouseId,
+    //    //        QRCodeImageId = (int?)null,
+    //    //        UserId = (string?)null,
+    //    //        Description = "new",
+    //    //        ImageBase64 = base64Image 
+    //    //    };
+
+    //    //    string json = JsonSerializer.Serialize(appImage);
+    //    //    var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+    //    //    using var httpClient = new HttpClient();
+    //    //    var response = await httpClient.PostAsync("https://habhaaa-001-site1.qtempurl.com/api/AppImage/JsonAddImages", content);
+
+    //    //    string responseContent = await response.Content.ReadAsStringAsync();
+
+    //    //    if (response.IsSuccessStatusCode)
+    //    //    {
+    //    //        await DisplayAlert("Success", "Image uploaded successfully!", "OK");
+    //    //    }
+    //    //    else
+    //    //    {
+    //    //        await DisplayAlert("Error", $"Upload failed! Status: {response.StatusCode}, Message: {responseContent}", "OK");
+    //    //    }
+
+    //    //}
+    //    //catch (Exception ex)
+    //    //{
+    //    //    await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
+    //    //}
+    //    //try
+    //    //{
+    //    //    // Assuming you already have _boardingHouse and _imageBytes
+    //    //    //int id = _boardingHouse.BoardinghouseId;  // BoardinghouseId from the selected boarding house
+    //    //    //var imageByteArray = _imageBytes;         // Image byte array from the selected image
+
+    //    //    var appImage = new AppImage
+    //    //    {
+    //    //        BoardinghouseId = _boardingHouse.BoardinghouseId,  
+    //    //        QRCodeImageId = null, 
+    //    //        UserId = "", 
+    //    //        Description = "", 
+    //    //        ImageData = _imageBytes 
+    //    //    };
+
+    //    //    int boardinghouseId = appImage.BoardinghouseId ?? 0; 
+    //    //    byte[] imageByteArray = _imageBytes; 
+    //    //    string userId = appImage.UserId;
+    //    //    string description = appImage.Description;
+
+    //    //    if (imageByteArray == null || imageByteArray.Length == 0)
+    //    //    {
+    //    //        await DisplayAlert("Error", "No image selected.", "OK");
+    //    //        return;
+    //    //    }
+
+    //    //    using (var content = new MultipartFormDataContent())
+    //    //    {
+    //    //        // Ensure you're using the correct variables here
+    //    //        //content.Add(new StringContent(appImage.BoardinghouseId?.ToString() ?? string.Empty), "boardinghouseId");
+    //    //        //content.Add(new StringContent(appImage.QRCodeImageId?.ToString() ?? string.Empty), "qrCodeImageId");
+    //    //        //content.Add(new StringContent(appImage.UserId), "userId");
+    //    //        //content.Add(new StringContent(appImage.Description), "description");
+    //    //        content.Add(new StringContent(boardinghouseId.ToString()), "boardinghouseId");
+    //    //        content.Add(new StringContent(appImage.QRCodeImageId?.ToString() ?? string.Empty), "qrCodeImageId");
+    //    //        content.Add(new StringContent(userId), "userId");
+    //    //        content.Add(new StringContent(description), "description");
+
+    //    //        // Prepare the image byte array for uploading
+    //    //        var fileContent = new ByteArrayContent(imageByteArray);
+    //    //        fileContent.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg");  // Adjust the content type based on your image format
+    //    //        content.Add(fileContent, "image", "image.jpg");  // Adjust filename if needed
+
+    //    //        // Make the POST request to the API
+    //    //        var response = await _httpClient.PostAsync("https://habhaaa-001-site1.qtempurl.com/api/AppImage/AddImages", content);
+
+    //    //        // Handle the response from the server
+    //    //        if (response.IsSuccessStatusCode)
+    //    //        {
+    //    //            await DisplayAlert("Success", "Image uploaded successfully!", "OK");
+    //    //        }
+    //    //        else
+    //    //        {
+    //    //            await DisplayAlert("Error", "Image upload failed.", "OK");
+    //    //        }
+    //    //    }
+    //    //}
+    //    //catch (Exception ex)
+    //    //{
+    //    //    // Handle exceptions
+    //    //    await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
+    //    //}
+    //}
 
 
     //private async void OnUploadImage_Clicked(object sender, EventArgs e)
