@@ -32,40 +32,36 @@ public partial class CustomizeBoardingHousePage : ContentPage
         LoadAmeitiesLists();
         //LoadImagesAsync();
         LoadBoarders();
-        loadImage();
+        LoadImages();
     }
+    //int boardinghouseId = _boardingHouse.BoardinghouseId;
 
-    private async Task loadImage()
+    private async Task LoadImages()
     {
         int boardinghouseId = _boardingHouse.BoardinghouseId;
 
-        if (boardinghouseId == 0)
-        {
-            await DisplayAlert("Error", "Invalid Boardinghouse ID.", "OK");
-            return;
-        }
-
         try
-        
-            // error pa ga stuck and url
+        {
+            var images = await _tenantService.GetBoardingHouseImageAsync(boardinghouseId);
 
-            string apiUrl = $"https://habhaaa-001-site1.qtempurl.com/api/AppImage/GetImagesByBoardinghouseId/{boardinghouseId}";
-            HttpResponseMessage response = await _httpClient.GetAsync(apiUrl);
-
-            if (!response.IsSuccessStatusCode)
+            if (images != null && images.Count > 0)
             {
-                await DisplayAlert("Error", "Failed to fetch images.", "OK");
-                return;
+                foreach (var img in images)
+                {
+                    if (img.ImageData != null && img.ImageData.Length > 0)
+                    {
+                        img.ImageSource = ImageSource.FromStream(() => new MemoryStream(img.ImageData));
+                    }
+                }
+
+                ImageCollectionView.ItemsSource = images;
+                ImageMessage.IsVisible = false;
             }
-
-            string jsonResult = await response.Content.ReadAsStringAsync();
-            var images = JsonSerializer.Deserialize<List<AppImage>>(jsonResult, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-
-            _images.Clear();
-            foreach (var img in images)
+            else
             {
-                img.ImageSource = ImageSource.FromStream(() => new MemoryStream(img.ImageData));
-                _images.Add(img);
+                ImageCollectionView.ItemsSource = null;
+                ImageMessage.Text = "No images available.";
+                ImageMessage.IsVisible = true;
             }
         }
         catch (Exception ex)
@@ -73,6 +69,8 @@ public partial class CustomizeBoardingHousePage : ContentPage
             await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
         }
     }
+
+
 
     private async Task LoadBoarders()
     {

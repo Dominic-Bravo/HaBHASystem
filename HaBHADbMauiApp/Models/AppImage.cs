@@ -16,5 +16,17 @@ namespace HaBHADbMauiApp.Models
         public string Description { get; set; }
 
         public ImageSource ImageSource { get; set; }
+
+        public AppImage()
+        {
+            if (ImageData != null && ImageData.Length > 0)
+            {
+                ImageSource = ImageSource.FromStream(() => new MemoryStream(ImageData));
+            }
+            else
+            {
+                ImageSource = "dotnet_bot.png"; 
+            }
+        }
     }
 }

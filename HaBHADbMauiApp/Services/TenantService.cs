@@ -178,7 +178,7 @@ namespace HaBHADbMauiApp.Services
         {
             var httpClient = httpClientFactory?.CreateClient("custom-httpclient");
 
-            if (httpClient  == null)
+            if (httpClient == null)
             {
                 return false;
             }
@@ -217,7 +217,7 @@ namespace HaBHADbMauiApp.Services
                 {
                     return null;
                 }
-            }   
+            }
             catch (Exception ex)
             {
                 return null;
@@ -303,7 +303,7 @@ namespace HaBHADbMauiApp.Services
 
             if (httpClient == null)
             {
-                return false;  
+                return false;
             }
 
             try
@@ -312,14 +312,14 @@ namespace HaBHADbMauiApp.Services
                 {
                     BoardinghouseId = boardinghouseId,
                     ImageBase64 = base64Image,
-                    Description = "Sample image description"  
+                    Description = "Sample image description"
                 };
 
                 var response = await httpClient.PostAsJsonAsync("/api/BoardingHouseImage/Add", imageObject);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    return true; 
+                    return true;
                 }
             }
             catch
@@ -349,7 +349,7 @@ namespace HaBHADbMauiApp.Services
                 Console.WriteLine($"Error retrieving image: {ex.Message}");
             }
 
-            return null; 
+            return null;
         }
 
         public async Task TenantAddLocationAsync(BoardingHouseLocation location)
@@ -358,7 +358,7 @@ namespace HaBHADbMauiApp.Services
 
             try
             {
-                var response = await httpClient.PostAsJsonAsync("/api/Locations/CreateLocation", location); 
+                var response = await httpClient.PostAsJsonAsync("/api/Locations/CreateLocation", location);
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -515,5 +515,103 @@ namespace HaBHADbMauiApp.Services
                 return false;
             }
         }
+
+        // Image
+
+        //public async Task<AppImage?> GetBoardingHouseImageAsync(int boardinghouseId)
+        //{
+        //    var httpClient = httpClientFactory?.CreateClient("custom-httpclient");
+
+        //    try
+        //    {
+        //        var response = await httpClient.GetAsync($"/api/AppImage/GetImagesByBoardinghouseId/{boardinghouseId}");
+
+        //        if (response.IsSuccessStatusCode)
+        //        {
+        //            var boardingHouseImages = await response.Content.ReadFromJsonAsync<List<AppImage>>();
+
+        //            return boardingHouseImages?.FirstOrDefault(); // Return the first image or null if none exist
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine($"Error retrieving image: {ex.Message}");
+        //    }
+
+        //    return null;
+        //}
+
+
+        public async Task<List<AppImage>?> GetBoardingHouseImageAsync(int boardinghouseId)
+        {
+            var httpClient = httpClientFactory?.CreateClient("custom-httpclient");
+
+            try
+            {
+                var response = await httpClient.GetAsync($"/api/AppImage/GetImagesByBoardinghouseId/{boardinghouseId}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var boardingHouseImages = await response.Content.ReadFromJsonAsync<List<AppImage>>();
+
+                    return boardingHouseImages;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error retrieving image: {ex.Message}");
+            }
+
+            return null;
+        }
+
+        public async Task<AppImage?> GetQrCodeImageAsync(int QrCodeId)
+        {
+            var httpClient = httpClientFactory?.CreateClient("custom-httpclient");
+
+            try
+            {
+                var response = await httpClient.GetAsync($"/api/AppImage/ByQRCodeImageId/{QrCodeId}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var boardingHouseImage = await response.Content.ReadFromJsonAsync<AppImage>();
+
+                    return boardingHouseImage;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error retrieving image: {ex.Message}");
+            }
+
+            return null;
+        }
+
+        public async Task<AppImage?> GetImageByIdAsync(string? token)
+        {
+            var httpClient = httpClientFactory?.CreateClient("custom-httpclient");
+
+            try
+            {
+                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+                var response = await httpClient.GetAsync("/api/AppImage/GetImagesByUserIdviaToken");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var Booking = await response.Content.ReadFromJsonAsync<AppImage>();
+
+                    return Booking;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error retrieving image: {ex.Message}");
+            }
+
+            return null;
+        }
+
     }
 }
