@@ -1,0 +1,26 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       [dbo].[ClientRequests]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[ClientRequests] (Default Constraint)
+       unnamed constraint on [dbo].[ClientRequests] (Default Constraint)
+     Recreate table
+       [dbo].[ClientRequests] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_ClientRequests_AspNetUsers_ClientId] (Foreign Key)
+       [dbo].[FK_ClientRequests_BoardingHouses] (Foreign Key)
+     Create
+       [dbo].[ClientRequests].[IX_ClientRequests_BoardinghouseId] (Index)
+       [dbo].[ClientRequests].[IX_ClientRequests_ClientId] (Index)
+       [dbo].[FK_ClientRequests_AspNetUsers_ClientId] (Foreign Key)
+       [dbo].[FK_ClientRequests_BoardingHouses] (Foreign Key)

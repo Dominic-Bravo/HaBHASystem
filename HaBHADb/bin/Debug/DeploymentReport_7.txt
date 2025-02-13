@@ -1,0 +1,57 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[__EFMigrationsHistory] (Table)
+       [dbo].[Amenities] (Table)
+       [dbo].[Amenities].[IX_Amenities_BoardinghouseId] (Index)
+       [dbo].[AspNetRoleClaims] (Table)
+       [dbo].[AspNetRoleClaims].[IX_AspNetRoleClaims_RoleId] (Index)
+       [dbo].[AspNetRoles] (Table)
+       [dbo].[AspNetRoles].[RoleNameIndex] (Index)
+       [dbo].[AspNetUserClaims] (Table)
+       [dbo].[AspNetUserClaims].[IX_AspNetUserClaims_UserId] (Index)
+       [dbo].[AspNetUserLogins] (Table)
+       [dbo].[AspNetUserLogins].[IX_AspNetUserLogins_UserId] (Index)
+       [dbo].[AspNetUserRoles] (Table)
+       [dbo].[AspNetUserRoles].[IX_AspNetUserRoles_RoleId] (Index)
+       [dbo].[AspNetUsers] (Table)
+       [dbo].[AspNetUsers].[EmailIndex] (Index)
+       [dbo].[AspNetUsers].[UserNameIndex] (Index)
+       [dbo].[AspNetUserTokens] (Table)
+       [dbo].[BoardingHouses] (Table)
+       [dbo].[BoardingHouses].[IX_BoardingHouses_TenantId] (Index)
+       [dbo].[BookingTransactions] (Table)
+       [dbo].[BookingTransactions].[IX_BookingTransactions_BoardingHouseId] (Index)
+       [dbo].[BookingTransactions].[IX_BookingTransactions_ClientId] (Index)
+       [dbo].[ClientRequests] (Table)
+       [dbo].[ClientRequests].[IX_ClientRequests_BoardinghouseId] (Index)
+       [dbo].[ClientRequests].[IX_ClientRequests_ClientId] (Index)
+       [dbo].[Images] (Table)
+       Default Constraint: unnamed constraint on [dbo].[AspNetUsers] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[BookingTransactions] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[ClientRequests] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[ClientRequests] (Default Constraint)
+       [dbo].[FK_Amenities_BoardingHouses_BoardinghouseId] (Foreign Key)
+       [dbo].[FK_AspNetRoleClaims_AspNetRoles_RoleId] (Foreign Key)
+       [dbo].[FK_AspNetUserClaims_AspNetUsers_UserId] (Foreign Key)
+       [dbo].[FK_AspNetUserLogins_AspNetUsers_UserId] (Foreign Key)
+       [dbo].[FK_AspNetUserRoles_AspNetRoles_RoleId] (Foreign Key)
+       [dbo].[FK_AspNetUserRoles_AspNetUsers_UserId] (Foreign Key)
+       [dbo].[FK_AspNetUserTokens_AspNetUsers_UserId] (Foreign Key)
+       [dbo].[FK_BoardingHouses_AspNetUsers_TenantId] (Foreign Key)
+       [dbo].[FK_BookingTransactions_AspNetUsers_ClientId] (Foreign Key)
+       [dbo].[FK_BookingTransactions_BoardingHouses_BoardingHouseId] (Foreign Key)
+       [dbo].[FK_ClientRequests_AspNetUsers_ClientId] (Foreign Key)
+       [dbo].[FK_ClientRequests_BoardingHouses] (Foreign Key)
+       [dbo].[FK_Images_Boardinghouse] (Foreign Key)
+
+** Supporting actions

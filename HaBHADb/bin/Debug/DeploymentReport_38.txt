@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[AppImages] (Table)
+       [dbo].[AppImages].[IX_AppImages_BoardinghouseId] (Index)
+       [dbo].[AppImages].[IX_AppImages_UserId] (Index)
+       [dbo].[FK_AppImages_BoardingHouses] (Foreign Key)
+       [dbo].[FK_AppImages_AspNetUsers] (Foreign Key)
+       [dbo].[AddAppImage] (Procedure)
+       [dbo].[GetImagesByIds] (Procedure)
+
+** Supporting actions

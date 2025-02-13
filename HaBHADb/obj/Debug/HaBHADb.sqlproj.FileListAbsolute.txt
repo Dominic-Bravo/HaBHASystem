@@ -1,0 +1,10 @@
+C:\Users\63966\Desktop\Capstone Projects\HaBHASolution\HaBHADb\bin\Debug\HaBHADb.dacpac
+C:\Users\63966\Desktop\Capstone Projects\HaBHASolution\HaBHADb\bin\Debug\HaBHADb.dll
+C:\Users\63966\Desktop\Capstone Projects\HaBHASolution\HaBHADb\bin\Debug\HaBHADb.pdb
+C:\Users\63966\Desktop\Capstone Projects\HaBHASolution\HaBHADb\obj\Debug\HaBHADb.sqlproj.AssemblyReference.cache
+C:\Users\63966\Desktop\Capstone Projects\HaBHASolution\HaBHADb\obj\Debug\HaBHADb.dll
+C:\Users\63966\Desktop\Capstone Projects\HaBHASolution\HaBHADb\obj\Debug\HaBHADb.pdb
+C:\Users\63966\Desktop\Capstone Projects\HaBHASolution\HaBHADb\obj\Debug\Model.xml
+C:\Users\63966\Desktop\Capstone Projects\HaBHASolution\HaBHADb\obj\Debug\refactor.xml
+C:\Users\63966\Desktop\Capstone Projects\HaBHASolution\HaBHADb\obj\Debug\postdeploy.sql
+C:\Users\63966\Desktop\Capstone Projects\HaBHASolution\HaBHADb\obj\Debug\predeploy.sql

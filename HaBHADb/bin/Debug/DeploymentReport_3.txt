@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       [dbo].[ImageFiles]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column Id in table [dbo].[ImageFiles] is currently  UNIQUEIDENTIFIER NOT NULL but is being changed to  INT
+         NOT NULL. There is no implicit or explicit conversion.
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[ImageFiles] (Default Constraint)
+     Recreate table
+       [dbo].[ImageFiles] (Table)
+
+** Supporting actions
+
+The type for column Id in table [dbo].[ImageFiles] is currently  UNIQUEIDENTIFIER NOT NULL but is being changed to  INT NOT NULL. There is no implicit or explicit conversion.
+

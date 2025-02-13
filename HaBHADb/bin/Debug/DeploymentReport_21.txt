@@ -1,0 +1,44 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       [dbo].[Bookings]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Bookings].[TenantId] on table [dbo].[Bookings] must be added, but the column has no default value and
+         does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must
+         either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults
+         as a deployment option.
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[Bookings] (Default Constraint)
+       unnamed constraint on [dbo].[Bookings] (Default Constraint)
+     Recreate table
+       [dbo].[Bookings] (Table)
+     Create
+       [dbo].[CheckIfClientHasBookingByClientId] (Procedure)
+       [dbo].[GetPendingBookingsByTenantId] (Procedure)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_BookingAmenities_Bookings] (Foreign Key)
+       [dbo].[FK_Bookings_BoardingHouses] (Foreign Key)
+       [dbo].[FK_Bookings_AspNetUsers] (Foreign Key)
+     Create
+       [dbo].[Bookings].[IX_Bookings_BoardinghouseId] (Index)
+       [dbo].[Bookings].[IX_Bookings_ClientId] (Index)
+       [dbo].[FK_BookingAmenities_Bookings] (Foreign Key)
+       [dbo].[FK_Bookings_BoardingHouses] (Foreign Key)
+       [dbo].[FK_Bookings_AspNetUsers] (Foreign Key)
+     Refresh
+       [dbo].[AddBooking] (Procedure)
+       [dbo].[ApproveOrRejectBooking] (Procedure)
+       [dbo].[GetBookingDetails] (Procedure)
+       [dbo].[GetBookingWithAmenities] (Procedure)
+       [dbo].[GetPendingBookings] (Procedure)
+       [dbo].[RemoveClientFromBoardingHouse] (Procedure)
+
+The column [dbo].[Bookings].[TenantId] on table [dbo].[Bookings] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+

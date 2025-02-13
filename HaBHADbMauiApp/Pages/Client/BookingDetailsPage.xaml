@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HaBHADbMauiApp.Pages.Client.BookingDetailsPage"
+             Title="BookingDetailsPage" BackgroundColor="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Static Header Labels -->
+        <VerticalStackLayout Padding="10">
+            <Frame CornerRadius="50" WidthRequest="350" HeightRequest="50" BackgroundColor="Black" >
+                <Label Text="Booking Details" HeightRequest="35" TextColor="White" HorizontalOptions="Center" Margin="5" FontAttributes="None" FontSize="20"/>
+            </Frame>
+        </VerticalStackLayout>
+
+        <!-- Scrollable Content -->
+        <ScrollView Grid.Row="2">
+            <StackLayout>
+                <StackLayout Margin="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Frame CornerRadius="50" WidthRequest="250" HeightRequest="30" BackgroundColor="Black" Margin="10">
+                        <Label Text="Room Details" HeightRequest="20" TextColor="White" HorizontalOptions="Center" Margin="5" FontAttributes="None" FontSize="16"/>
+                    </Frame>
+                    <ListView x:Name="TestListView" HasUnevenRows="True" SeparatorVisibility="None" SelectionMode="None">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Frame MaximumHeightRequest="200" MinimumWidthRequest="100" BackgroundColor="White" CornerRadius="40" Margin="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="*" />
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <Label 
+                                                Text="{Binding Room}" 
+                                                Grid.Row="0" 
+                                                VerticalTextAlignment="Center" 
+                                                HorizontalTextAlignment="Center" 
+                                                FontAttributes="Bold" 
+                                                FontSize="Title"/>
+                                            <Grid Grid.Row="1">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
+                                                </Grid.ColumnDefinitions>
+                                                <Label 
+                                                    Text="{Binding Description}" 
+                                                    VerticalTextAlignment="Center" 
+                                                    HorizontalTextAlignment="Center" 
+                                                    Grid.Column="0" 
+                                                    FontSize="Subtitle" 
+                                                    LineBreakMode="WordWrap"/>
+                                                <Label 
+                                                    Text="{Binding Price}" 
+                                                    VerticalTextAlignment="Center" 
+                                                    HorizontalTextAlignment="Center" 
+                                                    Grid.Column="1" 
+                                                    FontSize="Subtitle"/>
+                                                <Label 
+                                                    Text="{Binding RoomSize}" 
+                                                    VerticalTextAlignment="Center" 
+                                                    HorizontalTextAlignment="Center" 
+                                                    Grid.Column="2" 
+                                                    FontSize="Subtitle"/>
+                                            </Grid>
+                                        </Grid>
+                                    </Frame>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+
+                <StackLayout>
+                    <Frame CornerRadius="50" WidthRequest="250" HeightRequest="30" BackgroundColor="Black" Margin="10">
+                        <Label Text="Amenities" HeightRequest="20" TextColor="White" HorizontalOptions="Center" Margin="5" FontAttributes="None" FontSize="16"/>
+                    </Frame>
+                    <Frame BackgroundColor="LightGray">
+                        <ScrollView HeightRequest="125">
+                            <ListView x:Name="AmenitiesListView" HasUnevenRows="True" SeparatorVisibility="None" SelectionMode="None">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <Frame MaximumHeightRequest="200" MinimumWidthRequest="100" CornerRadius="20">
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*"/>
+                                                        <ColumnDefinition Width="*"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Label TextColor="Black" Text="{Binding Name}" FontAttributes="Bold" Grid.Column="0" />
+                                                    <Label TextColor="Black" Text="{Binding Price, StringFormat='Price is ₱{0:N2}'}" Grid.Column="1"/>
+                                                </Grid>
+                                            </Frame>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </ScrollView>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Static Bottom Buttons -->
+        <Grid Grid.Row="4" Margin="10,0,10,10" ColumnSpacing="10" HorizontalOptions="FillAndExpand" VerticalOptions="End" RowSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" FontSize="12" TextColor="White" x:Name="BtnCancel" Text="Cancel" CornerRadius="20" Clicked="BtnCancel_Clicked" BackgroundColor="Blue" VerticalOptions="End"/>
+            <Button Grid.Column="1" FontSize="12" TextColor="White" x:Name="BtnConfirm" Text="Confirm" Clicked="BtnConfirm_Clicked" CornerRadius="20" BackgroundColor="Blue" VerticalOptions="End"/>
+        </Grid>
+    </Grid>
+</ContentPage>

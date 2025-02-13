@@ -1,0 +1,78 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       [dbo].[Amenities]
+       [dbo].[BoardingHouses]
+       [dbo].[BookingTransactions]
+       [dbo].[ClientRequests]
+       [dbo].[Images]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column AmenityId in table [dbo].[Amenities] is currently  UNIQUEIDENTIFIER NOT NULL but is being changed to
+          INT IDENTITY (1, 1) NOT NULL. There is no implicit or explicit conversion.
+       The type for column BoardinghouseId in table [dbo].[Amenities] is currently  UNIQUEIDENTIFIER NULL but is being changed
+         to  INT NULL. There is no implicit or explicit conversion.
+       The type for column BoardinghouseId in table [dbo].[BoardingHouses] is currently  UNIQUEIDENTIFIER NOT NULL but is being
+         changed to  INT IDENTITY (1, 1) NOT NULL. There is no implicit or explicit conversion.
+       The type for column BoardingHouseId in table [dbo].[BookingTransactions] is currently  UNIQUEIDENTIFIER NULL but is
+         being changed to  INT NULL. There is no implicit or explicit conversion.
+       The type for column BookingTransactionId in table [dbo].[BookingTransactions] is currently  UNIQUEIDENTIFIER NOT NULL
+         but is being changed to  INT IDENTITY (1, 1) NOT NULL. There is no implicit or explicit conversion.
+       The type for column BoardinghouseId in table [dbo].[ClientRequests] is currently  UNIQUEIDENTIFIER NULL but is being
+         changed to  INT NULL. There is no implicit or explicit conversion.
+       The type for column ClientRequestId in table [dbo].[ClientRequests] is currently  UNIQUEIDENTIFIER NOT NULL but is being
+         changed to  INT IDENTITY (1, 1) NOT NULL. There is no implicit or explicit conversion.
+       The type for column BoardinghouseId in table [dbo].[Images] is currently  UNIQUEIDENTIFIER NULL but is being changed to 
+         INT NULL. There is no implicit or explicit conversion.
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[Amenities] (Default Constraint)
+       unnamed constraint on [dbo].[BoardingHouses] (Default Constraint)
+       unnamed constraint on [dbo].[BookingTransactions] (Default Constraint)
+       unnamed constraint on [dbo].[BookingTransactions] (Default Constraint)
+       unnamed constraint on [dbo].[ClientRequests] (Default Constraint)
+       unnamed constraint on [dbo].[ClientRequests] (Default Constraint)
+       unnamed constraint on [dbo].[ClientRequests] (Default Constraint)
+     Recreate table
+       [dbo].[Amenities] (Table)
+       [dbo].[BoardingHouses] (Table)
+       [dbo].[BookingTransactions] (Table)
+       [dbo].[ClientRequests] (Table)
+       [dbo].[Images] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_Amenities_BoardingHouses_BoardinghouseId] (Foreign Key)
+       [dbo].[FK_BoardingHouses_AspNetUsers_TenantId] (Foreign Key)
+       [dbo].[FK_BookingTransactions_BoardingHouses_BoardingHouseId] (Foreign Key)
+       [dbo].[FK_ClientRequests_BoardingHouses] (Foreign Key)
+       [dbo].[FK_Images_Boardinghouse] (Foreign Key)
+       [dbo].[FK_BookingTransactions_AspNetUsers_ClientId] (Foreign Key)
+       [dbo].[FK_ClientRequests_AspNetUsers_ClientId] (Foreign Key)
+     Create
+       [dbo].[Amenities].[IX_Amenities_BoardinghouseId] (Index)
+       [dbo].[BoardingHouses].[IX_BoardingHouses_TenantId] (Index)
+       [dbo].[BookingTransactions].[IX_BookingTransactions_BoardingHouseId] (Index)
+       [dbo].[BookingTransactions].[IX_BookingTransactions_ClientId] (Index)
+       [dbo].[ClientRequests].[IX_ClientRequests_BoardinghouseId] (Index)
+       [dbo].[ClientRequests].[IX_ClientRequests_ClientId] (Index)
+       [dbo].[FK_Amenities_BoardingHouses_BoardinghouseId] (Foreign Key)
+       [dbo].[FK_BoardingHouses_AspNetUsers_TenantId] (Foreign Key)
+       [dbo].[FK_BookingTransactions_BoardingHouses_BoardingHouseId] (Foreign Key)
+       [dbo].[FK_ClientRequests_BoardingHouses] (Foreign Key)
+       [dbo].[FK_Images_Boardinghouse] (Foreign Key)
+       [dbo].[FK_BookingTransactions_AspNetUsers_ClientId] (Foreign Key)
+       [dbo].[FK_ClientRequests_AspNetUsers_ClientId] (Foreign Key)
+
+The type for column AmenityId in table [dbo].[Amenities] is currently  UNIQUEIDENTIFIER NOT NULL but is being changed to  INT IDENTITY (1, 1) NOT NULL. There is no implicit or explicit conversion.
+The type for column BoardinghouseId in table [dbo].[Amenities] is currently  UNIQUEIDENTIFIER NULL but is being changed to  INT NULL. There is no implicit or explicit conversion.
+The type for column BoardinghouseId in table [dbo].[BoardingHouses] is currently  UNIQUEIDENTIFIER NOT NULL but is being changed to  INT IDENTITY (1, 1) NOT NULL. There is no implicit or explicit conversion.
+The type for column BoardingHouseId in table [dbo].[BookingTransactions] is currently  UNIQUEIDENTIFIER NULL but is being changed to  INT NULL. There is no implicit or explicit conversion.
+The type for column BookingTransactionId in table [dbo].[BookingTransactions] is currently  UNIQUEIDENTIFIER NOT NULL but is being changed to  INT IDENTITY (1, 1) NOT NULL. There is no implicit or explicit conversion.
+The type for column BoardinghouseId in table [dbo].[ClientRequests] is currently  UNIQUEIDENTIFIER NULL but is being changed to  INT NULL. There is no implicit or explicit conversion.
+The type for column ClientRequestId in table [dbo].[ClientRequests] is currently  UNIQUEIDENTIFIER NOT NULL but is being changed to  INT IDENTITY (1, 1) NOT NULL. There is no implicit or explicit conversion.
+The type for column BoardinghouseId in table [dbo].[Images] is currently  UNIQUEIDENTIFIER NULL but is being changed to  INT NULL. There is no implicit or explicit conversion.
+

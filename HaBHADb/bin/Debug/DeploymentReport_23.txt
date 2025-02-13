@@ -1,0 +1,45 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       [dbo].[BookingTransactions]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[BookingTransactions].[AmountPaid] is being dropped, data loss could occur.
+       The column [dbo].[BookingTransactions].[BookingDate] is being dropped, data loss could occur.
+       The column [dbo].[BookingTransactions].[BookingTransactionId] is being dropped, data loss could occur.
+       The column [dbo].[BookingTransactions].[CheckInDate] is being dropped, data loss could occur.
+       The column [dbo].[BookingTransactions].[CheckOutDate] is being dropped, data loss could occur.
+
+** User actions
+     Drop
+       [dbo].[BookingTransactions].[IX_BookingTransactions_BoardingHouseId] (Index)
+       unnamed constraint on [dbo].[BookingTransactions] (Default Constraint)
+       [dbo].[FK_BookingTransactions_AspNetUsers_ClientId] (Foreign Key)
+       [dbo].[FK_BookingTransactions_BoardingHouses_BoardingHouseId] (Foreign Key)
+     Recreate table
+       [dbo].[BookingTransactions] (Table)
+     Create
+       [dbo].[FK_BookingTransactions_AspNetUsers_ClientId] (Foreign Key)
+       [dbo].[FK_BookingTransactions_BoardinghouseId] (Foreign Key)
+       [dbo].[AddBookingTransaction] (Procedure)
+       [dbo].[ApproveBookingTransaction] (Procedure)
+       [dbo].[GetAllLocations] (Procedure)
+       [dbo].[GetBookingTransactionsByFilters] (Procedure)
+       [dbo].[GetNewestBoardinghouseIdByClientId] (Procedure)
+     Alter
+       [dbo].[CreateQrImage] (Procedure)
+       [dbo].[GetAvailableBoardingHouses] (Procedure)
+
+** Supporting actions
+     Create
+       [dbo].[BookingTransactions].[IX_BookingTransactions_ClientId] (Index)
+
+The column [dbo].[BookingTransactions].[AmountPaid] is being dropped, data loss could occur.
+The column [dbo].[BookingTransactions].[BookingDate] is being dropped, data loss could occur.
+The column [dbo].[BookingTransactions].[BookingTransactionId] is being dropped, data loss could occur.
+The column [dbo].[BookingTransactions].[CheckInDate] is being dropped, data loss could occur.
+The column [dbo].[BookingTransactions].[CheckOutDate] is being dropped, data loss could occur.
+The column BoardinghouseId on table [dbo].[BookingTransactions] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+

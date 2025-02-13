@@ -1,0 +1,26 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       [dbo].[QrImages]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Recreate table
+       [dbo].[QrImages] (Table)
+     Alter
+       [dbo].[CreateQrImage] (Procedure)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_QrImages_BoardingHouse] (Foreign Key)
+       [dbo].[FK_QrImages_Tenant] (Foreign Key)
+     Create
+       [dbo].[FK_QrImages_BoardingHouse] (Foreign Key)
+       [dbo].[FK_QrImages_Tenant] (Foreign Key)
+     Refresh
+       [dbo].[DeleteQrImage] (Procedure)
+       [dbo].[GetQrImagesByTenantId] (Procedure)

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HaBHADbMauiApp.Pages.NewUI.bookView"
+             Title="Book a Service">
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label 
+            Text="Book a Service"
+            FontSize="24"
+            HorizontalOptions="Center" /> 
+       
+        <Entry 
+            Placeholder="Full Name"
+            x:Name="FullNameEntry"
+            VerticalOptions="Center" 
+            HorizontalOptions="FillAndExpand" />
+
+        <Entry 
+            Placeholder="Email"
+            x:Name="EmailEntry"
+            Keyboard="Email"
+            VerticalOptions="Center" 
+            HorizontalOptions="FillAndExpand" />
+
+        <Entry 
+            Placeholder="Phone Number"
+            x:Name="PhoneNumberEntry"
+            Keyboard="Telephone"
+            VerticalOptions="Center" 
+            HorizontalOptions="FillAndExpand" />
+
+        <Entry 
+             Placeholder="Emergency Contact"
+             x:Name="EmergencyContactEntry"
+             Keyboard="Telephone"
+             VerticalOptions="Center" 
+             HorizontalOptions="FillAndExpand" />
+
+
+        <DatePicker 
+            x:Name="DatePicker"
+            VerticalOptions="Center" 
+            HorizontalOptions="FillAndExpand" />
+
+        <Editor 
+            Placeholder="Additional Notes"
+            x:Name="NotesEditor"
+            AutoSize="TextChanges"
+            VerticalOptions="Center" 
+            HorizontalOptions="FillAndExpand" />
+
+        <Button 
+            Text="Submit"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Clicked="OnSubmitClicked" />
+        
+        
+    </VerticalStackLayout>
+</ContentPage>

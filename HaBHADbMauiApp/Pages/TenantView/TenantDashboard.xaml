@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HaBHADbMauiApp.Pages.TenantView.TenantDashboard"
+             Title="TenantDashboard">
+
+    <ContentPage.Content>
+        <Grid>
+            <ScrollView>
+
+                <StackLayout Padding="20" Spacing="20" BackgroundColor="White">
+                    <!-- Header -->
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                        <Button x:Name="btnShowBH"
+                                Text="Boarding House"
+                                WidthRequest="80"
+                                Clicked="btnShowBH_Clicked"/>
+                        <Button x:Name="BtnAddBoardinghouse"
+                                Text="Add"
+                                WidthRequest="80"
+                                Clicked="BtnAddBoardinghouse_Clicked"/>
+                        <Button x:Name="BtnMaps"
+                                Text="Maps"
+                                WidthRequest="80"
+                                Clicked="BtnMaps_Clicked"/>
+                    </HorizontalStackLayout>
+                    <Label Text="Your Listings" 
+                           FontSize="24" 
+                           FontAttributes="Bold" 
+                           TextColor="Black">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="TappedShowList" Tapped="TappedShowList_Tapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+
+                    <Label Text="You have (3) listings" 
+               TextColor="Gray" />
+
+                    <!-- Listings -->
+                    <StackLayout Spacing="20">
+                        <RefreshView x:Name="refreshView"
+                                     IsRefreshing="{Binding IsRefreshing}"
+                                     Command="{Binding RefreshCommand}">
+                            <!-- Bind to the RefreshCommand -->
+
+                            <ListView x:Name="productListView1" 
+                                      HasUnevenRows="True" 
+                                      VerticalScrollBarVisibility="Never"
+                                      HorizontalScrollBarVisibility="Never"
+                                      ItemsSource="{Binding BoardingHouses}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <SwipeView>
+                                                <SwipeView.LeftItems>
+                                                    <SwipeItems Mode="Reveal">
+                                                        <SwipeItem Text="Edit" 
+                                                                   x:Name="OnEditSwipe"
+                                                                   BackgroundColor="LightBlue" 
+                                                                   Invoked="OnEditSwipe_Invoked" />
+                                                    </SwipeItems>
+                                                </SwipeView.LeftItems>
+                                                <SwipeView.RightItems>
+                                                    <SwipeItems Mode="Reveal">
+                                                        <SwipeItem Text="Delete" 
+                                                                   x:Name="OnDeleteSwipe"
+                                                                   BackgroundColor="LightCoral" 
+                                                                   Invoked="OnDeleteSwipe_Invoked" />
+                                                    </SwipeItems>
+                                                </SwipeView.RightItems>
+
+                                                <Frame CornerRadius="10" Padding="0" HasShadow="True" BorderColor="LightGray">
+                                                    <StackLayout>
+                                                        <Image Source="habha_logo.jpg" 
+                                                               HeightRequest="150" 
+                                                               Aspect="AspectFill" />
+                                                        <StackLayout Padding="10">
+                                                            <Label Text="{Binding Descriptions}" 
+                                                                   FontSize="16" 
+                                                                   FontAttributes="Bold" 
+                                                                   TextColor="Black" />
+                                                        </StackLayout>
+                                                    </StackLayout>
+                                                </Frame>
+                                            </SwipeView>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </RefreshView>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+
+            <Frame Margin="0,770,0,0">
+                <HorizontalStackLayout Margin="-20,-15,-20,-15" Spacing="1" HorizontalOptions="Center" Padding="0">
+                    <ImageButton WidthRequest="65"
+                     Source="manage.png"
+                     BackgroundColor="#E5E5E5"
+                     CornerRadius="5"
+                     Clicked="btnShowBH_Clicked"
+                     />
+                    <ImageButton WidthRequest="75"
+                     Source="map.png"
+                     BackgroundColor="#E5E5E5"
+                     CornerRadius="5"
+                     Clicked="BtnMaps_Clicked"
+                    />
+                    <ImageButton WidthRequest="75"
+                     Source="search.png"
+                     BackgroundColor="#E5E5E5"
+                     CornerRadius="5"
+                    />
+                    <ImageButton WidthRequest="75"
+                      Source="notification.png"
+                     BackgroundColor="#E5E5E5"
+                     CornerRadius="5"
+                      />
+                    <ImageButton WidthRequest="75"
+                     Source="profile.png"
+                     BackgroundColor="#E5E5E5"
+                     CornerRadius="5"
+                    />
+                </HorizontalStackLayout>
+            </Frame>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

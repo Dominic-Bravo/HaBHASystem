@@ -1,0 +1,88 @@
+09/01/2025 4:24:15 pm	This log contains information about the import schema operation into project 'HaBHADb' on computer 'LAPTOP-R4T1CH5E' by user '63966'.
+09/01/2025 4:24:15 pm	Import of database schema has started.
+09/01/2025 4:24:25 pm	Gathering database credentials
+09/01/2025 4:24:25 pm	Gathering database options
+09/01/2025 4:24:25 pm	Gathering generic database scoped configuration option
+09/01/2025 4:24:25 pm	Gathering users
+09/01/2025 4:24:25 pm	Gathering roles
+09/01/2025 4:24:25 pm	Gathering application roles
+09/01/2025 4:24:25 pm	Gathering role memberships
+09/01/2025 4:24:25 pm	Gathering filegroups
+09/01/2025 4:24:25 pm	Gathering full-text catalogs
+09/01/2025 4:24:25 pm	Gathering assemblies
+09/01/2025 4:24:25 pm	Gathering certificates
+09/01/2025 4:24:25 pm	Gathering asymmetric keys
+09/01/2025 4:24:25 pm	Gathering symmetric keys
+09/01/2025 4:24:25 pm	Gathering encrypted symmetric keys
+09/01/2025 4:24:25 pm	Gathering schemas
+09/01/2025 4:24:25 pm	Gathering XML schema collections
+09/01/2025 4:24:25 pm	Gathering user-defined data types
+09/01/2025 4:24:25 pm	Gathering user-defined types
+09/01/2025 4:24:25 pm	Gathering table types
+09/01/2025 4:24:25 pm	Gathering unique keys for table types
+09/01/2025 4:24:25 pm	Gathering primary keys for table types
+09/01/2025 4:24:50 pm	Gathering indexes for table types
+09/01/2025 4:24:50 pm	Gathering check constraints for table types
+09/01/2025 4:24:50 pm	Gathering default constraints for table types
+09/01/2025 4:24:50 pm	Gathering partition functions
+09/01/2025 4:24:50 pm	Gathering partition schemes
+09/01/2025 4:24:50 pm	Gathering functions
+09/01/2025 4:24:50 pm	Gathering encrypted functions
+09/01/2025 4:24:50 pm	Gathering aggregates
+09/01/2025 4:24:50 pm	Gathering procedures
+09/01/2025 4:24:50 pm	Gathering encrypted procedures
+09/01/2025 4:24:51 pm	Gathering tables
+09/01/2025 4:25:46 pm	Gathering primary keys
+09/01/2025 4:26:00 pm	Gathering unique constraints
+09/01/2025 4:26:00 pm	Gathering foreign keys
+09/01/2025 4:26:00 pm	Gathering default constraints
+09/01/2025 4:26:25 pm	Gathering check constraints
+09/01/2025 4:26:25 pm	Gathering views
+09/01/2025 4:26:25 pm	Gathering encrypted views
+09/01/2025 4:26:25 pm	Gathering indexes
+09/01/2025 4:26:25 pm	Gathering statistics
+09/01/2025 4:26:25 pm	Gathering full-text index stoplists
+09/01/2025 4:26:25 pm	Gathering search property lists
+09/01/2025 4:26:25 pm	Gathering search properties
+09/01/2025 4:26:25 pm	Gathering full-text indexes
+09/01/2025 4:26:25 pm	Gathering column store indexes
+09/01/2025 4:26:25 pm	Gathering spatial indexes
+09/01/2025 4:26:25 pm	Gathering XML indexes
+09/01/2025 4:27:41 pm	Gathering Selective XML indexes
+09/01/2025 4:27:41 pm	Gathering encrypted triggers
+09/01/2025 4:27:42 pm	Gathering triggers
+09/01/2025 4:28:07 pm	Gathering encrypted and clr ddl triggers
+09/01/2025 4:28:11 pm	Gathering ddl triggers
+09/01/2025 4:28:11 pm	Creating edge constraints
+09/01/2025 4:28:11 pm	Gathering synonyms
+09/01/2025 4:28:36 pm	Gathering defaults
+09/01/2025 4:28:36 pm	Gathering data constraint uddt bindings
+09/01/2025 4:28:46 pm	Gathering rules
+09/01/2025 4:28:46 pm	Gathering data constraint uddt bindings
+09/01/2025 4:28:46 pm	Gathering message types
+09/01/2025 4:28:46 pm	Gathering queues
+09/01/2025 4:28:46 pm	Gathering contracts
+09/01/2025 4:28:46 pm	Gathering services
+09/01/2025 4:28:46 pm	Gathering event notifications
+09/01/2025 4:28:46 pm	Gathering remote service bindings
+09/01/2025 4:28:46 pm	Gathering broker priorities
+09/01/2025 4:28:46 pm	Gathering signatures
+09/01/2025 4:28:46 pm	Gathering compression options
+09/01/2025 4:28:46 pm	Gathering sequence types
+09/01/2025 4:28:47 pm	Gathering security policies
+09/01/2025 4:28:47 pm	Gather column encryption keys
+09/01/2025 4:28:47 pm	Gathering column master keys
+09/01/2025 4:28:47 pm	Gathering external data sources
+09/01/2025 4:28:47 pm	Gathering external file formats
+09/01/2025 4:28:47 pm	Gathering external tables
+09/01/2025 4:28:48 pm	Gathering XML index compression options
+09/01/2025 4:28:48 pm	Gathering extended properties
+09/01/2025 4:28:51 pm	Gathering assemblies
+09/01/2025 4:28:52 pm	Gathering credentials
+09/01/2025 4:28:52 pm	Gathering logins
+09/01/2025 4:28:52 pm	Gathering server audits
+09/01/2025 4:28:52 pm	Scanning project for duplicate elements
+09/01/2025 4:28:52 pm	Finished duplicate element processing
+09/01/2025 4:28:54 pm	Finished importing database.
+09/01/2025 4:28:54 pm	A summary of the import was saved to the following location: C:\Users\63966\Desktop\Capstone Projects\HaBHASolution\HaBHADb\Import Schema Logs\HaBHADb_20250109082415.log
+09/01/2025 4:28:54 pm	Click Finish to continue...

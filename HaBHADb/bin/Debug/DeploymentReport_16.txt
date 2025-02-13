@@ -1,0 +1,23 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[QrImages] (Table)
+       [dbo].[FK_QrImages_BoardingHouse] (Foreign Key)
+       [dbo].[FK_QrImages_Tenant] (Foreign Key)
+       [dbo].[CreateLocation] (Procedure)
+       [dbo].[DeleteLocation] (Procedure)
+       [dbo].[GetLocationsByBoardinghouseId] (Procedure)
+       [dbo].[RemoveClientFromBoardingHouse] (Procedure)
+     Alter
+       [dbo].[ApproveOrRejectBooking] (Procedure)
+
+** Supporting actions

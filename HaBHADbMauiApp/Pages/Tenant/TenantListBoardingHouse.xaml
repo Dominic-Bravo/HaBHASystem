@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HaBHADbMauiApp.Pages.Tenant.TenantListBoardingHouse"
+             Title="TenantListBoardingHouse" BackgroundColor="white">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="1" Text="Manage Boarding House" FontSize="24" Margin="0,20" HorizontalOptions="Center" VerticalOptions="Center"  TextColor="Black"/>
+
+        <ScrollView Grid.Row="2">
+            <ListView HasUnevenRows="True" x:Name="ListBoardingHouse" SeparatorVisibility="None" SelectionMode="None" Margin="10">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame MaximumHeightRequest="200" MinimumWidthRequest="100" Margin="10" BackgroundColor="LightGray" BorderColor="Black" CornerRadius="40" >
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <Label 
+                                        Text="{Binding RoomNumber, StringFormat='Room Number: {0}'}" 
+                                        TextColor="Black"
+                                        Grid.Row="0" 
+                                        VerticalTextAlignment="Center" 
+                                        HorizontalTextAlignment="Center" 
+                                        FontAttributes="Bold" 
+                                        FontSize="Title"/>
+
+                                    <Grid Grid.Row="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Label 
+                                            Text="{Binding Descriptions, StringFormat='Room Description: {0}'}" 
+                                            TextColor="Black"
+                                            VerticalTextAlignment="Center" 
+                                            HorizontalTextAlignment="Center" 
+                                            Grid.Column="0" 
+                                            FontSize="Subtitle" 
+                                            LineBreakMode="WordWrap"/>
+
+                                        <Label  
+                                            Text="{Binding PricePerMonth, StringFormat='Price is ₱{0:N2}'}" 
+                                            VerticalTextAlignment="Center" 
+                                            TextColor="Black"
+                                            HorizontalTextAlignment="Center" 
+                                            Grid.Column="1" 
+                                            FontSize="Subtitle"/>
+
+                                        <Label 
+                                            Text="{Binding RoomSize, StringFormat='Pax: {0}'}" 
+                                            VerticalTextAlignment="Center" 
+                                            TextColor="Black"
+                                            HorizontalTextAlignment="Center" 
+                                            Grid.Column="2" 
+                                            FontSize="Subtitle"/>
+                                    </Grid>
+
+                                    <Grid Grid.Row="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Button 
+                                            Text="Customize" 
+                                            x:Name="BtnCustomize"
+                                            HorizontalOptions="Center" 
+                                            TextColor="White"
+                                            BackgroundColor="Blue"
+                                            Clicked="BtnCustomize_Clicked" />
+                                    </Grid>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+
+        <Grid Grid.Row="3" ColumnSpacing="10" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button
+                x:Name="BtnAddMaps"
+                Text="Add Maps"
+             Command="{Binding AddMapsCommand}"
+             BindingContext="{Binding SelectedAppUser}"
+             Clicked="BtnAddMaps_Clicked_1" />
+            <Button x:Name="BtnAdd" Clicked="BtnAdd_Clicked_1"  Text="Add" Grid.Column="1" TextColor="White" BackgroundColor="Blue"/>
+            <Button x:Name="BtnNotifications" Clicked="BtnNotifications_Clicked" TextColor="White" Text="Notifications" Grid.Column="2" BackgroundColor="Blue"/>
+        </Grid>
+    </Grid>
+
+</ContentPage>
+
+

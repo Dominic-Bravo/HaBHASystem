@@ -1,0 +1,24 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Alter
+       [dbo].[Bookings] (Table)
+
+** Supporting actions
+     Refresh
+       [dbo].[AddBooking] (Procedure)
+       [dbo].[ApproveOrRejectBooking] (Procedure)
+       [dbo].[CheckIfClientHasBookingByClientId] (Procedure)
+       [dbo].[GetBookingDetails] (Procedure)
+       [dbo].[GetBookingWithAmenities] (Procedure)
+       [dbo].[GetPendingBookings] (Procedure)
+       [dbo].[GetPendingBookingsByTenantId] (Procedure)
+       [dbo].[RemoveClientFromBoardingHouse] (Procedure)

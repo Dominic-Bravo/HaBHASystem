@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HaBHADbMauiApp.Pages.Tenant.AddBoardingHousePage"
+             Title="Add Boarding House" BackgroundColor="White">
+
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Spacing="20">
+        <!-- Static Header Labels -->
+        <Label Text="Add Boarding House" FontSize="24" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" />
+
+        <Image
+            Source="habha_logo.jpg"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+             />
+
+        <Frame BackgroundColor="LightGrey" CornerRadius="50" HeightRequest="500" WidthRequest="350" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+            <StackLayout Margin="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Grid Padding="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Entry x:Name="TxtRoomNumber" Placeholder="Enter Room Number" Grid.Column="1" TextColor="Black" HeightRequest="50" FontSize="20" WidthRequest="270" Background="White" Keyboard="Numeric"/>
+                </Grid>
+                <Grid Padding="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Entry x:Name="TxtRoomSize" Placeholder="Number of boarders" Grid.Column="1" TextColor="Black" HeightRequest="50" FontSize="20" WidthRequest="270" Background="White" Keyboard="Numeric" />
+                </Grid>
+                <Grid Padding="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Entry x:Name="TxtPrice" Grid.Column="1" Placeholder="Enter Price" TextColor="Black" HeightRequest="50" FontSize="20" WidthRequest="270" Background="White" Keyboard="Numeric" />
+                </Grid>
+                <Grid Padding="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Entry x:Name="TxtDescription" Placeholder="Enter Description" Grid.Column="1" TextColor="Black" HeightRequest="50" FontSize="20" WidthRequest="270" Background="White" />
+                </Grid>
+                <Grid Grid.Row="2" Margin="10,0,10,0" ColumnSpacing="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" HeightRequest="50" TextColor="White" x:Name="BtnAddBoardingHouse" Text="Save" CornerRadius="20" Clicked="BtnAddBoardingHouse_Clicked" BackgroundColor="Blue"/>
+                    <Button Grid.Column="1" HeightRequest="50" TextColor="White" x:Name="BtnCancel" Text="Cancel" CornerRadius="20" Clicked="BtnCancel_Clicked" BackgroundColor="Red"/>
+                </Grid>
+            </StackLayout>
+        </Frame>
+    </VerticalStackLayout>
+
+</ContentPage>
+

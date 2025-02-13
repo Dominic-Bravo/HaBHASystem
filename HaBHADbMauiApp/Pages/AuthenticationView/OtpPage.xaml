@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HaBHADbMauiApp.Pages.AuthenticationView.OtpPage"
+             Title="Account Recovery">
+
+    <VerticalStackLayout BackgroundColor="White" Padding="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+        <!-- Frame to apply corner radius -->
+        <Frame Margin="0,200" BackgroundColor="LightGray" CornerRadius="20" Padding="20" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+            <!-- Form -->
+            <VerticalStackLayout Spacing="12" HorizontalOptions="FillAndExpand">
+
+                <!-- Title -->
+                <Label 
+                    Text="Account Recovery" 
+                    FontSize="24" 
+                    FontAttributes="Bold" 
+                    TextColor="Black"
+                    HorizontalOptions="Center" 
+                    Margin="0,0,0,20"/>
+
+                <!-- Email Input -->
+                <Entry x:Name="EmailOTP" 
+                       Placeholder="Please enter your Email" 
+                       TextColor="Black" 
+                       BackgroundColor="White" 
+                       HeightRequest="40" 
+                       WidthRequest="250"/>
+
+                <!-- Send OTP Button -->
+                <Button 
+                    Margin="0,15" 
+                    Text="Send OTP" 
+                    x:Name="OTPtoemail" 
+                    Clicked="OTPtoemail_Clicked" 
+                    BackgroundColor="Blue" 
+                    TextColor="White" 
+                    Padding="10" 
+                    WidthRequest="150" 
+                    HorizontalOptions="Center" 
+                    CornerRadius="20" />
+
+                <!-- OTP Input -->
+                <Entry x:Name="TxtOtp" 
+                       Placeholder="Enter Code" 
+                       TextColor="Black" 
+                       WidthRequest="250"
+                       BackgroundColor="White" 
+                       HeightRequest="40" />
+
+                <!-- Submit Button -->
+                <Button 
+                    Margin="0,15" 
+                    Text="Submit" 
+                    x:Name="BtnSubmit" 
+                    Clicked="BtnSubmit_Clicked" 
+                    BackgroundColor="Blue" 
+                    TextColor="White" 
+                    Padding="10" 
+                    WidthRequest="150" 
+                    HorizontalOptions="Center" 
+                    CornerRadius="20" />
+
+            </VerticalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+
+</ContentPage>
+
+

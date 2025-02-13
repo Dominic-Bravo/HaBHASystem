@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>HaBHADb</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{42870e45-b793-4ea4-bcd4-8a565926ce2d}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>HaBHADb</RootNamespace>
+    <AssemblyName>HaBHADb</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="StoredProcedures" />
+    <Folder Include="StoredProcedures\TenantBoardingHouse" />
+    <Folder Include="StoredProcedures\TenantAmenities" />
+    <Folder Include="StoredProcedures\ClientBooking" />
+    <Folder Include="StoredProcedures\TenantListBook" />
+    <Folder Include="StoredProcedures\BoardingHouseImage" />
+    <Folder Include="StoredProcedures\Location" />
+    <Folder Include="StoredProcedures\QrImage" />
+    <Folder Include="StoredProcedures\BookingTransaction" />
+    <Folder Include="StoredProcedures\New" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\ClientRequests.sql" />
+    <Build Include="dbo\Tables\ImageFiles.sql" />
+    <Build Include="dbo\Tables\__EFMigrationsHistory.sql" />
+    <Build Include="dbo\Tables\AspNetRoles.sql" />
+    <Build Include="dbo\Tables\AspNetUsers.sql" />
+    <Build Include="dbo\Tables\AspNetRoleClaims.sql" />
+    <Build Include="dbo\Tables\AspNetUserClaims.sql" />
+    <Build Include="dbo\Tables\AspNetUserLogins.sql" />
+    <Build Include="dbo\Tables\AspNetUserRoles.sql" />
+    <Build Include="dbo\Tables\AspNetUserTokens.sql" />
+    <Build Include="dbo\Tables\Amenities.sql" />
+    <Build Include="dbo\Tables\BoardingHouses.sql" />
+    <Build Include="dbo\Tables\Locations.sql" />
+    <Build Include="StoredProcedures\TenantBoardingHouse\AddBoardingHouse.sql" />
+    <Build Include="StoredProcedures\TenantBoardingHouse\DeleteBoardingHouse.sql" />
+    <Build Include="StoredProcedures\TenantBoardingHouse\GetAllBoardingHouses.sql" />
+    <Build Include="StoredProcedures\TenantBoardingHouse\GetTenantBoardingHouseById.sql" />
+    <Build Include="StoredProcedures\TenantBoardingHouse\UpdateBoardingHouse.sql" />
+    <Build Include="StoredProcedures\TenantAmenities\AddAmenity.sql" />
+    <Build Include="StoredProcedures\TenantAmenities\UpdateAmenity.sql" />
+    <Build Include="StoredProcedures\TenantAmenities\DeleteAmenity.sql" />
+    <Build Include="StoredProcedures\TenantAmenities\GetAmenitiesByBoardinghouseId.sql" />
+    <Build Include="dbo\Tables\Bookings.sql" />
+    <Build Include="dbo\Tables\BookingAmenities.sql" />
+    <Build Include="StoredProcedures\ClientBooking\AddBooking.sql" />
+    <Build Include="StoredProcedures\ClientBooking\AddAmenitiesToBooking.sql" />
+    <Build Include="StoredProcedures\TenantListBook\GetBookingWithAmenities.sql" />
+    <Build Include="StoredProcedures\TenantListBook\GetPendingBookings.sql" />
+    <Build Include="StoredProcedures\TenantListBook\ApproveOrRejectBooking.sql" />
+    <Build Include="dbo\Tables\BoardingHouseImages.sql" />
+    <Build Include="StoredProcedures\BoardingHouseImage\AddBoardingHouseImage.sql" />
+    <Build Include="StoredProcedures\BoardingHouseImage\GetBoardingHouseImages.sql" />
+    <Build Include="StoredProcedures\BoardingHouseImage\DeleteBoardingHouseImage.sql" />
+    <Build Include="StoredProcedures\BoardingHouseImage\DeleteAllBoardingHouseImages.sql" />
+    <Build Include="StoredProcedures\BoardingHouseImage\UpdateBoardingHouseImage.sql" />
+    <Build Include="StoredProcedures\TenantListBook\GetBookingDetails.sql" />
+    <Build Include="StoredProcedures\TenantListBook\GetAmenitiesByBookingId.sql" />
+    <Build Include="StoredProcedures\TenantListBook\RemoveClientFromBoardingHouse.sql" />
+    <Build Include="StoredProcedures\Location\CreateLocation.sql" />
+    <Build Include="StoredProcedures\Location\DeleteLocation.sql" />
+    <Build Include="StoredProcedures\Location\GetLocationsByBoardinghouseId.sql" />
+    <Build Include="dbo\Tables\QRImages.sql" />
+    <Build Include="StoredProcedures\QrImage\CreateQrImage.sql" />
+    <Build Include="StoredProcedures\QrImage\DeleteQrImage.sql" />
+    <Build Include="StoredProcedures\QrImage\GetQrImagesByTenantId.sql" />
+    <Build Include="StoredProcedures\TenantBoardingHouse\GetTotalPriceForBoardingHouse.sql" />
+    <Build Include="StoredProcedures\TenantListBook\GetAvailableBoardingHouses.sql" />
+    <Build Include="StoredProcedures\TenantListBook\GetPendingBookingsByTenantId.sql" />
+    <Build Include="StoredProcedures\ClientBooking\CheckIfClientHasBookingByClientId.sql" />
+    <Build Include="StoredProcedures\Location\GetAllLocations.sql" />
+    <Build Include="StoredProcedures\ClientBooking\GetBoardinghouseIdByClientId.sql" />
+    <Build Include="dbo\Tables\BookingTransaction.sql" />
+    <Build Include="StoredProcedures\BookingTransaction\AddBookingTransaction.sql" />
+    <Build Include="StoredProcedures\BookingTransaction\ApproveBookingTransaction.sql" />
+    <Build Include="StoredProcedures\BookingTransaction\GetBookingTransactionsByFilters.sql" />
+    <Build Include="StoredProcedures\TenantBoardingHouse\GetBoardingHouseById.sql" />
+    <Build Include="StoredProcedures\TenantBoardingHouse\TenantProfileCounts.sql" />
+    <Build Include="StoredProcedures\TenantBoardingHouse\GetTenantBoardingHouseCountsById.sql" />
+    <Build Include="StoredProcedures\ClientBooking\DeleteBookingByClient.sql" />
+    <Build Include="StoredProcedures\ClientBooking\GetClientBoardingHouse.sql" />
+    <Build Include="dbo\Tables\AppImages.sql" />
+    <Build Include="StoredProcedures\New\AddAppImage.sql" />
+    <Build Include="StoredProcedures\New\GetImagesByIds.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HaBHADb.publish.xml" />
+  </ItemGroup>
+</Project>

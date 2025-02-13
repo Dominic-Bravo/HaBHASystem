@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HaBHADbMauiApp.Pages.AuthenticationView.AccountEditProfileView"
+             Title="AccountEditProfileView">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Text="Edit Profile" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large" FontAttributes="Bold" Margin="20"/>
+
+        <VerticalStackLayout Padding="10" Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+            </Grid>
+            <Frame WidthRequest="150" HeightRequest="150" CornerRadius="75" Grid.Row="0" Margin="20" >
+                <Image Source="habha_logo.jpg" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Center" />
+            </Frame>
+            <VerticalStackLayout Spacing="20" Margin="10" Grid.Row="1">
+                <Entry x:Name="TxtFirstName" Placeholder="First Name" TextColor="Black" HeightRequest="40" Background="White"/>
+                <Entry x:Name="TxtLastName" Placeholder="Last Name" TextColor="Black" HeightRequest="40" Background="White"/>
+                <Entry x:Name="TxtMobileNumber" Placeholder="Mobile Number" TextColor="Black" HeightRequest="40" Background="White"/>
+                <Entry x:Name="TxtEmailAddress" Placeholder="Email Address" TextColor="Black" HeightRequest="40" Background="White"/>
+                <Entry x:Name="TxtAddress" Placeholder="Address" TextColor="Black" HeightRequest="40" Background="White"/>
+
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+        
+        <HorizontalStackLayout Grid.Row="2" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20" Margin="20">
+            <Button x:Name="BtnCancel" Clicked="BtnCancel_Clicked" Text="Cancel" WidthRequest="150" BackgroundColor="LightGray" TextColor="Black"/>
+            <Button x:Name="BtnSaveProfile" Clicked="BtnSaveProfile_Clicked" Text="Save" WidthRequest="150"/>
+        </HorizontalStackLayout>
+    </Grid>
+</ContentPage>

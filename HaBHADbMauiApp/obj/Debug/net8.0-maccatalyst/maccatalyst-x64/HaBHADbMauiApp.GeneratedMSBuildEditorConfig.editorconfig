@@ -1,0 +1,245 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HaBHADbMauiApp
+build_property.ProjectDir = C:\Users\63966\Desktop\BookingNewUI\CapsS\LastNa\HaBHADapperSolution\HaBHADbMauiApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/NewPage1.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.NewPage1.xaml
+build_metadata.AdditionalFiles.TargetPath = NewPage1.xaml
+build_metadata.AdditionalFiles.RelativePath = NewPage1.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/AuthenticationView/AccountEditProfileView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.AuthenticationView.AccountEditProfileView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AuthenticationView\AccountEditProfileView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AuthenticationView\AccountEditProfileView.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/AuthenticationView/ChooseRoleView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.AuthenticationView.ChooseRoleView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AuthenticationView\ChooseRoleView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AuthenticationView\ChooseRoleView.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/AuthenticationView/LoginView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.AuthenticationView.LoginView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AuthenticationView\LoginView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AuthenticationView\LoginView.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/AuthenticationView/OtpPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.AuthenticationView.OtpPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AuthenticationView\OtpPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AuthenticationView\OtpPage.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/AuthenticationView/RecoveryView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.AuthenticationView.RecoveryView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AuthenticationView\RecoveryView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AuthenticationView\RecoveryView.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/AuthenticationView/ResetPasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.AuthenticationView.ResetPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AuthenticationView\ResetPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AuthenticationView\ResetPasswordPage.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/AuthenticationView/SignupView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.AuthenticationView.SignupView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AuthenticationView\SignupView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AuthenticationView\SignupView.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/AuthenticationView/UserProfileView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.AuthenticationView.UserProfileView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AuthenticationView\UserProfileView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AuthenticationView\UserProfileView.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/Client/AddPaymentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.Client.AddPaymentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Client\AddPaymentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Client\AddPaymentPage.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/Client/BookingDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.Client.BookingDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Client\BookingDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Client\BookingDetailsPage.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/Client/ClientBoardingHouse.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.Client.ClientBoardingHouse.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Client\ClientBoardingHouse.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Client\ClientBoardingHouse.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/Client/ClientProfile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.Client.ClientProfile.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Client\ClientProfile.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Client\ClientProfile.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/Client/NewsFeedPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.Client.NewsFeedPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Client\NewsFeedPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Client\NewsFeedPage.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/Client/SearchByPriceRange.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.Client.SearchByPriceRange.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Client\SearchByPriceRange.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Client\SearchByPriceRange.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/MapUI/ClientView/ClientMakeRequestView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.MapUI.ClientView.ClientMakeRequestView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MapUI\ClientView\ClientMakeRequestView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MapUI\ClientView\ClientMakeRequestView.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/MapUI/ClientView/ClientNewsFeedView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.MapUI.ClientView.ClientNewsFeedView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MapUI\ClientView\ClientNewsFeedView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MapUI\ClientView\ClientNewsFeedView.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/MapUI/TenantMap.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.MapUI.TenantMap.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MapUI\TenantMap.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MapUI\TenantMap.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/MapUI/ViewMaps.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.MapUI.ViewMaps.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MapUI\ViewMaps.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MapUI\ViewMaps.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/NewUI/bookView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.NewUI.bookView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\NewUI\bookView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\NewUI\bookView.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/NewUI/ClientNewView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.NewUI.ClientNewView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\NewUI\ClientNewView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\NewUI\ClientNewView.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/NewUI/TenantNewView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.NewUI.TenantNewView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\NewUI\TenantNewView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\NewUI\TenantNewView.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/TenantView/ProfileView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.TenantView.ProfileView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\TenantView\ProfileView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\TenantView\ProfileView.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/TenantView/TenantDashboard.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.TenantView.TenantDashboard.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\TenantView\TenantDashboard.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\TenantView\TenantDashboard.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/TenantView/TenantInventoryManagementView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.TenantView.TenantInventoryManagementView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\TenantView\TenantInventoryManagementView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\TenantView\TenantInventoryManagementView.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/TenantView/TenantRequestView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.TenantView.TenantRequestView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\TenantView\TenantRequestView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\TenantView\TenantRequestView.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/Tenant/AddAmenitiesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.Tenant.AddAmenitiesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Tenant\AddAmenitiesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Tenant\AddAmenitiesPage.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/Tenant/AddBoardingHouse.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.Tenant.AddBoardingHouse.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Tenant\AddBoardingHouse.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Tenant\AddBoardingHouse.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/Tenant/CustomizeBoardingHousePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.Tenant.CustomizeBoardingHousePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Tenant\CustomizeBoardingHousePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Tenant\CustomizeBoardingHousePage.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/Tenant/DetailedNotificationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.Tenant.DetailedNotificationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Tenant\DetailedNotificationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Tenant\DetailedNotificationPage.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/Tenant/TenantListBoardingHouse.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.Tenant.TenantListBoardingHouse.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Tenant\TenantListBoardingHouse.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Tenant\TenantListBoardingHouse.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/Tenant/TenantNotificationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.Tenant.TenantNotificationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Tenant\TenantNotificationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Tenant\TenantNotificationPage.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Pages/Tenant/UploadQRImagePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Pages.Tenant.UploadQRImagePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Tenant\UploadQRImagePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Tenant\UploadQRImagePage.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/63966/Desktop/BookingNewUI/CapsS/LastNa/HaBHADapperSolution/HaBHADbMauiApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HaBHADbMauiApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

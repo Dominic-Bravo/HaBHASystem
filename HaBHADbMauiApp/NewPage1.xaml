@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HaBHADbMauiApp.NewPage1"
+             Title="NewPage1">
+
+    <StackLayout Spacing="20" Padding="30">
+        <RefreshView x:Name="refreshView"
+                 IsRefreshing="{Binding IsRefreshing}"  
+            Command="{Binding RefreshCommand}">
+
+            <ListView x:Name="listView"
+                  ItemsSource="{Binding Items}" 
+                IsPullToRefreshEnabled="True">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding ItemName}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </RefreshView>
+        <Button Text="Upload Image" x:Name="OnUploadButton" Clicked="OnUploadButton_Clicked" />
+        <Button Text="Fetch Image" x:Name="OnFetchImageButton" Clicked="OnFetchImageButton_Clicked" />
+        <Image x:Name="MyImageControl" WidthRequest="200" HeightRequest="200" />
+    </StackLayout>
+</ContentPage>

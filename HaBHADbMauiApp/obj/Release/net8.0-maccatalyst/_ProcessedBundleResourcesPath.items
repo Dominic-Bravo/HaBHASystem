@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <BundleResource Include="C:\Users\jayve\Desktop\CAps\ui\HaBHADapperSolution\HaBHADbMauiApp\obj\Release\net8.0-maccatalyst\resizetizer\r\dotnet_bot.png" />
+    <BundleResource Include="C:\Users\jayve\Desktop\CAps\ui\HaBHADapperSolution\HaBHADbMauiApp\obj\Release\net8.0-maccatalyst\resizetizer\r\dotnet_bot@2x.png" />
+    <BundleResource Include="C:\Users\jayve\Desktop\CAps\ui\HaBHADapperSolution\HaBHADbMauiApp\obj\Release\net8.0-maccatalyst\resizetizer\r\dotnet_bot@3x.png" />
+    <BundleResource Include="C:\Users\jayve\Desktop\CAps\ui\HaBHADapperSolution\HaBHADbMauiApp\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\facebook_logo.png" />
+    <BundleResource Include="C:\Users\jayve\Desktop\CAps\ui\HaBHADapperSolution\HaBHADbMauiApp\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\ggle.png" />
+    <BundleResource Include="C:\Users\jayve\Desktop\CAps\ui\HaBHADapperSolution\HaBHADbMauiApp\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\habha_logo.jpg" />
+    <BundleResource Include="C:\Users\jayve\Desktop\CAps\ui\HaBHADapperSolution\HaBHADbMauiApp\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\home_logo.png" />
+    <BundleResource Include="C:\Users\jayve\Desktop\CAps\ui\HaBHADapperSolution\HaBHADbMauiApp\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\manage.png" />
+    <BundleResource Include="C:\Users\jayve\Desktop\CAps\ui\HaBHADapperSolution\HaBHADbMauiApp\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\map.png" />
+    <BundleResource Include="C:\Users\jayve\Desktop\CAps\ui\HaBHADapperSolution\HaBHADbMauiApp\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\notification.png" />
+    <BundleResource Include="C:\Users\jayve\Desktop\CAps\ui\HaBHADapperSolution\HaBHADbMauiApp\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\profile.png" />
+    <BundleResource Include="C:\Users\jayve\Desktop\CAps\ui\HaBHADapperSolution\HaBHADbMauiApp\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\search.png" />
+    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\MauiInfo.plist" />
+  </ItemGroup>
+</Project>

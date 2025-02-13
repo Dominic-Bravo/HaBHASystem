@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HaBHADbMauiApp.Pages.NewUI.ClientNewView"
+             Title="ClientNewView">
+    <StackLayout Spacing="20">
+        <ListView x:Name="boardingHouseListView" ItemsSource="{Binding Listings}" HasUnevenRows="True" VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame BorderColor="LightGray" CornerRadius="8" Padding="10" Margin="0,5">
+                            <Grid Padding="16" RowDefinitions="Auto, *" ColumnDefinitions="*,*">
+                                <!-- Image Section -->
+                                <VerticalStackLayout Grid.Row="0" Grid.Column="0" Spacing="10">
+                                    <CollectionView ItemsSource="{Binding Images}" HorizontalScrollBarVisibility="Always" VerticalOptions="Start">
+                                        <CollectionView.ItemsLayout>
+                                            <LinearItemsLayout Orientation="Horizontal" />
+                                        </CollectionView.ItemsLayout>
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate>
+                                                <ImageButton Source="{Binding ImageUrl}" Aspect="AspectFit" HeightRequest="200" WidthRequest="150" />
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+
+                                    <Label Text="Locate" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+                                    <ImageButton Clicked="ImageButton_Clicked" WidthRequest="75" Source="map.png" CornerRadius="5" HeightRequest="50" />
+                                </VerticalStackLayout>
+
+                                <!-- Details Section -->
+                                <VerticalStackLayout Grid.Row="0" Grid.Column="1" Padding="16" Spacing="16">
+                                    <Label Text="Boarding House Details:" FontSize="20" FontAttributes="Bold" TextColor="Black" />
+                                    <Label>
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="List Of Amenities: " FontSize="20" FontAttributes="Bold" TextColor="Black" />
+                                                <Span Text="{Binding Amenities}" FontSize="16" TextColor="Black" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label>
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="Total Price per Month: " FontSize="20" FontAttributes="Bold" TextColor="Black" />
+                                                <Span Text="{Binding Price}" TextColor="Red" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Button Clicked="Button_Clicked" Text="Book" BackgroundColor="Blue" TextColor="White" CornerRadius="10" Padding="10" HorizontalOptions="Start" />
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!-- Add New Item Button -->
+       
+
+    </StackLayout>
+</ContentPage>

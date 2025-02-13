@@ -1,0 +1,22 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Alter
+       [dbo].[CreateQrImage] (Procedure)
+       [dbo].[GetAvailableBoardingHouses] (Procedure)
+     Create
+       [dbo].[AddBookingTransaction] (Procedure)
+       [dbo].[ApproveBookingTransaction] (Procedure)
+       [dbo].[GetAllLocations] (Procedure)
+       [dbo].[GetBookingTransactionsByFilters] (Procedure)
+       [dbo].[GetNewestBoardinghouseIdByClientId] (Procedure)
+
+** Supporting actions

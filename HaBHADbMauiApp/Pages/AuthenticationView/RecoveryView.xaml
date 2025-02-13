@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HaBHADbMauiApp.Pages.AuthenticationView.RecoveryView"
+             Title="Password Recovery">
+
+    <StackLayout Padding="20" Spacing="15">
+        <Label Text="Password Recovery" 
+               FontSize="24" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Start" />
+
+        <Entry x:Name="EmailEntry" 
+               Placeholder="Enter your email" 
+               Keyboard="Email" 
+               VerticalOptions="CenterAndExpand" />
+
+        <Entry x:Name="PasswordEntry" 
+               Placeholder="Enter your new password" 
+               IsPassword="True" 
+               VerticalOptions="CenterAndExpand" />
+
+        <Button Text="Send Recovery Email" 
+                Clicked="OnSendRecoveryEmailClicked" 
+                VerticalOptions="End" />
+
+        <Entry x:Name="VerificationCodeEntry" 
+               Placeholder="Enter verification code" 
+               VerticalOptions="CenterAndExpand" />
+
+        <Button Text="Verify Code" 
+                Clicked="OnVerifyCodeClicked" 
+                VerticalOptions="End" />
+
+        <Label x:Name="StatusLabel"
+               Text=""
+               TextColor="Red"
+               HorizontalOptions="Center"
+               VerticalOptions="End" />
+    </StackLayout>
+</ContentPage>
+
