@@ -133,14 +133,28 @@ public partial class TenantListBoardingHouse : ContentPage
     }
 
 
-    //private async void BtnAddMaps_Clicked(object sender, EventArgs e)
-    //{
-    //    if (sender is Button button && button.BindingContext is BoardingHouse bh)
-    //    {
-    //        await Navigation.PushModalAsync(new TenantMap(_tenantService, bh));
-    //    }
-    //}
+    private async void BtnAddMaps_Clicked(object sender, EventArgs e)
+    {
+   
+        BtnNotifications.IsEnabled = false;
+        BtnAdd.IsEnabled = false;
+        BtnAddMaps.IsEnabled = false;
 
+        try
+        {
+            await Navigation.PushModalAsync(new TenantMap(_tenantService));
+        }
+        catch
+        {
+
+        }
+        finally
+        {
+            BtnNotifications.IsEnabled = true;
+            BtnAdd.IsEnabled = true;
+            BtnAddMaps.IsEnabled = true;
+        }
+    }
     private async void BtnAdd_Clicked_1(object sender, EventArgs e)
     {
         BtnNotifications.IsEnabled = false;
@@ -163,27 +177,27 @@ public partial class TenantListBoardingHouse : ContentPage
         }
     }
 
-    private async void BtnAddMaps_Clicked_1(object sender, EventArgs e)
-    {
-        try
-        {
-            if (sender is Button button && button.BindingContext is AppUser appUser)
-            {
-                // Log the user ID for debugging
-                System.Diagnostics.Debug.WriteLine($"Navigating to map with user ID: {appUser.Id}");
+    //private async void BtnAddMaps_Clicked_1(object sender, EventArgs e)
+    //{
+    //    try
+    //    {
+    //        if (sender is Button button && button.BindingContext is AppUser appUser)
+    //        {
+    //            // Log the user ID for debugging
+    //            System.Diagnostics.Debug.WriteLine($"Navigating to map with user ID: {appUser.Id}");
 
-                await Navigation.PushModalAsync(new TenantMap(_accountService, appUser));
-            }
-            else
-            {
-                await DisplayAlert("Error", "Invalid user data.", "OK");
-            }
-        }
-        catch (Exception ex)
-        {
-            await DisplayAlert("Error", $"Failed to navigate: {ex.Message}", "OK");
-        }
-    }
+    //            await Navigation.PushModalAsync(new TenantMap(_accountService, appUser));
+    //        }
+    //        else
+    //        {
+    //            await DisplayAlert("Error", "Invalid user data.", "OK");
+    //        }
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        await DisplayAlert("Error", $"Failed to navigate: {ex.Message}", "OK");
+    //    }
+    //}
 }
 
 

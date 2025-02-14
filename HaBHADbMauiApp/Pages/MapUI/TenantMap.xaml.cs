@@ -15,11 +15,11 @@ namespace MapforMaui.MapUI
         private readonly TenantService _tenantService;
         private readonly BoardingHouse _boardingHouse;
 
-        public TenantMap(TenantService tenantService, BoardingHouse boardingHouse)
+        public TenantMap(TenantService tenantService  )
         {
             InitializeComponent();
             _tenantService = tenantService;
-            _boardingHouse = boardingHouse;
+         
 
             InitializeMap();
         }

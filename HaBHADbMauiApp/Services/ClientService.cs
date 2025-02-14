@@ -201,7 +201,10 @@ namespace HaBHADbMauiApp.Services
             {
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
+                _logger.LogInformation($"Sending booking request: {JsonSerializer.Serialize(dto)}");
+
                 var response = await httpClient.PostAsJsonAsync("/api/Booking", dto);
+
                 if (response.IsSuccessStatusCode)
                 {
                     _logger.LogInformation("Request successfully added.");
@@ -220,6 +223,8 @@ namespace HaBHADbMauiApp.Services
                 return false;
             }
         }
+
+
 
 
         public async Task<List<BoardinghousewTotalPriceDto>?> GetAvailableBHWithPriceAsync(string? token)

@@ -30,11 +30,9 @@ public partial class CustomizeBoardingHousePage : ContentPage
         ImageCollectionView.ItemsSource = _images;
         LoadBoardingHouse();
         LoadAmeitiesLists();
-        //LoadImagesAsync();
         LoadBoarders();
         LoadImages();
     }
-    //int boardinghouseId = _boardingHouse.BoardinghouseId;
 
     private async Task LoadImages()
     {
@@ -54,14 +52,34 @@ public partial class CustomizeBoardingHousePage : ContentPage
                     }
                 }
 
-                ImageCollectionView.ItemsSource = images;
-                ImageMessage.IsVisible = false;
+                // Filter out the QR code image from the general images collection
+                var generalImages = images.Where(img => !img.QRCodeImageId.HasValue).ToList();
+                ImageCollectionView.ItemsSource = generalImages;
+                ImageMessage.IsVisible = generalImages.Count == 0;
+
+                // Display the first QR code image
+                var qrCodeImage = images.FirstOrDefault(img => img.QRCodeImageId.HasValue);
+                if (qrCodeImage != null)
+                {
+                    QRCodeImage.Source = qrCodeImage.ImageSource;
+                    QRImageMessage.IsVisible = false;
+                }
+                else
+                {
+                    QRCodeImage.Source = null;
+                    QRImageMessage.Text = "No QR code image available.";
+                    QRImageMessage.IsVisible = true;
+                }
             }
             else
             {
                 ImageCollectionView.ItemsSource = null;
                 ImageMessage.Text = "No images available.";
                 ImageMessage.IsVisible = true;
+
+                QRCodeImage.Source = null;
+                QRImageMessage.Text = "No QR code image available.";
+                QRImageMessage.IsVisible = true;
             }
         }
         catch (Exception ex)
@@ -70,47 +88,12 @@ public partial class CustomizeBoardingHousePage : ContentPage
         }
     }
 
-
-
     private async Task LoadBoarders()
     {
-
         string id = _boardingHouse.ClientId;
-        var data = await Task.Run(() => _tenantService.GetUserByIdAsync(id));
-
-        this.BindingContext = data;
+        var data = await _tenantService.GetUserByIdAsync(id);
+        ClientDetailsStackLayout.BindingContext = data;
     }
-
-    //private async Task LoadImagesAsync()
-    //{
-    //    int id = _boardingHouse.BoardinghouseId;
-
-    //    var data = await _tenantService.GetImageAsync(id);
-
-    //    if (data != null)
-    //    {
-    //        foreach (var image in data)
-    //        {
-    //            if (!string.IsNullOrEmpty(image.ImageBase64))
-    //            {
-    //                byte[] imageBytes = Convert.FromBase64String(image.ImageBase64);
-
-    //                image.ImageSource = ImageSource.FromStream(() =>
-    //                {
-    //                    var stream = new MemoryStream(imageBytes);
-    //                    return stream;
-    //                });
-    //            }
-    //        }
-
-    //        BoardingHouseImages = data;
-    //        BoardingHouseImagesCollectionView.ItemsSource = BoardingHouseImages;
-    //    }
-    //    else
-    //    {
-    //        StatusMessage.Text = "No images found.";
-    //    }
-    //}
 
     private async Task LoadAmeitiesLists()
     {
@@ -123,7 +106,7 @@ public partial class CustomizeBoardingHousePage : ContentPage
     {
         if (_boardingHouse is not null)
         {
-            TxtRoomSize.Text = _boardingHouse.RoomSize.ToString(); // RoomSize    
+            TxtRoomSize.Text = _boardingHouse.RoomSize.ToString();
             TxtRoomNumber.Text = _boardingHouse.RoomNumber.ToString();
             TxtPrice.Text = _boardingHouse.PricePerMonth.ToString();
             TxtDescription.Text = _boardingHouse.Descriptions.ToString();
@@ -133,13 +116,11 @@ public partial class CustomizeBoardingHousePage : ContentPage
     private async void BtUpdateBoardingHouse_Clicked(object sender, EventArgs e)
     {
         BtnAddBoardingHouse.IsEnabled = false;
-       
         BtAddAmenities.IsEnabled = false;
 
         try
         {
             await Task.Delay(3000);
-
             await DisplayAlert("Operation Complete", "The boarding house has been updated.", "OK");
         }
         catch (Exception ex)
@@ -149,7 +130,6 @@ public partial class CustomizeBoardingHousePage : ContentPage
         finally
         {
             BtnAddBoardingHouse.IsEnabled = true;
-          
             BtAddAmenities.IsEnabled = true;
         }
     }
@@ -170,7 +150,6 @@ public partial class CustomizeBoardingHousePage : ContentPage
     private async void BtAddAmenities_Clicked(object sender, EventArgs e)
     {
         BtnAddBoardingHouse.IsEnabled = false;
-      
         BtAddAmenities.IsEnabled = false;
 
         try
@@ -200,7 +179,6 @@ public partial class CustomizeBoardingHousePage : ContentPage
         finally
         {
             BtnAddBoardingHouse.IsEnabled = true;
-      
             BtAddAmenities.IsEnabled = true;
         }
     }
@@ -226,9 +204,9 @@ public partial class CustomizeBoardingHousePage : ContentPage
                 return;
             }
 
-            if (_boardingHouse is null)
+            if (_boardingHouse == null)
             {
-                var boardingHouse = new BoardingHouse
+                _boardingHouse = new BoardingHouse
                 {
                     IsAvailable = true,
                     RoomNumber = int.Parse(TxtRoomNumber.Text),
@@ -237,30 +215,33 @@ public partial class CustomizeBoardingHousePage : ContentPage
                     Descriptions = TxtDescription.Text
                 };
 
-                var isSuccess = await _tenantService.AddOwnerBoardingHouseAsync(boardingHouse, token);
+                var isSuccess = await _tenantService.AddOwnerBoardingHouseAsync(_boardingHouse, token);
 
                 if (isSuccess)
                 {
                     await DisplayAlert("Success", "Boarding house added successfully.", "OK");
                 }
+                else
+                {
+                    await DisplayAlert("Error", "Failed to add boarding house.", "OK");
+                }
             }
             else
             {
-                var boardingHouse = new BoardingHouse
-                {
-                    TenantId = _boardingHouse.TenantId,
-                    ClientId = _boardingHouse.ClientId,
-                    RoomNumber = int.Parse(TxtRoomNumber.Text),
-                    RoomSize = int.Parse(TxtRoomSize.Text),
-                    PricePerMonth = decimal.Parse(TxtPrice.Text),
-                    Descriptions = TxtDescription.Text
-                };
+                _boardingHouse.RoomNumber = int.Parse(TxtRoomNumber.Text);
+                _boardingHouse.RoomSize = int.Parse(TxtRoomSize.Text);
+                _boardingHouse.PricePerMonth = decimal.Parse(TxtPrice.Text);
+                _boardingHouse.Descriptions = TxtDescription.Text;
 
-                var isSuccess = await _tenantService.UpdateOwnerBoardingHouseAsync(boardingHouse);
+                var isSuccess = await _tenantService.UpdateOwnerBoardingHouseAsync(_boardingHouse);
 
                 if (isSuccess)
                 {
                     await DisplayAlert("Success", "Boarding house updated successfully.", "OK");
+                }
+                else
+                {
+                    await DisplayAlert("Error", "Failed to update boarding house.", "OK");
                 }
             }
         }
@@ -276,6 +257,7 @@ public partial class CustomizeBoardingHousePage : ContentPage
             TxtDescription.Text = string.Empty;
         }
     }
+
 
     private async Task<(string Token, string RoleName)> GetAuthenticationTokenAndRoleAsync()
     {
@@ -304,10 +286,42 @@ public partial class CustomizeBoardingHousePage : ContentPage
 
     private async void BtnDelete_Clicked(object sender, EventArgs e)
     {
-        int id = _boardingHouse.BoardinghouseId;
+        try
+        {
+            if (_boardingHouse == null)
+            {
+                await DisplayAlert("Error", "No boarding house selected to delete.", "OK");
+                return;
+            }
 
-        await _tenantService.DeleteOwnerBoardingHouseAsync(id);
-        await DisplayAlert("Success", "Boarding house deleted successfully.", "OK");
+            bool confirm = await DisplayAlert("Confirm Deletion", "Are you sure you want to delete this boarding house?", "Yes", "No");
+
+            if (!confirm)
+            {
+                return;
+            }
+
+            int id = _boardingHouse.BoardinghouseId;
+            bool isSuccess = await _tenantService.DeleteOwnerBoardingHouseAsync(id);
+
+            if (isSuccess)
+            {
+                await DisplayAlert("Success", "Boarding house deleted successfully.", "OK");
+                _boardingHouse = null;
+                TxtRoomNumber.Text = string.Empty;
+                TxtRoomSize.Text = string.Empty;
+                TxtPrice.Text = string.Empty;
+                TxtDescription.Text = string.Empty;
+            }
+            else
+            {
+                await DisplayAlert("Error", "Failed to delete boarding house.", "OK");
+            }
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
+        }
     }
 
     private async void AmenityListView_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -450,8 +464,6 @@ public partial class CustomizeBoardingHousePage : ContentPage
         }
     }
 
-    // https://habhaaa-001-site1.qtempurl.com/api/AppImage/JsonAddImages
-
     private async void OnUploadImage_Clicked(object sender, EventArgs e)
     {
         var appImage = new AppImage
@@ -475,201 +487,8 @@ public partial class CustomizeBoardingHousePage : ContentPage
         }
     }
 
-    //private async void OnUploadImage_Clicked(object sender, EventArgs e)
-    //{
-    //    try
-    //    {
-    //        // Create the JSON data
-    //        var appImage = new AppImage
-    //        {
-    //            BoardinghouseId = _boardingHouse?.BoardinghouseId,
-    //            QRCodeImageId = null,
-    //            UserId = null,
-    //            Description = "new"
-    //        };
-
-    //        // Convert AppImage object to JSON string
-    //        string json = JsonSerializer.Serialize(appImage);
-
-    //        // Prepare multipart form-data content
-    //        var imageContent = new MultipartFormDataContent();
-
-    //        // Add image file as part of the request
-    //        using (var fileStream = new FileStream("path_to_image.jpg", FileMode.Open, FileAccess.Read))
-    //        {
-    //            var fileContent = new StreamContent(fileStream);
-    //            fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("image/jpeg"); // Adjust as per image type
-    //            imageContent.Add(fileContent, "image", "image.jpg");
-    //        }
-
-    //        // Add the JSON data as another part of the form-data
-    //        imageContent.Add(new StringContent(json, Encoding.UTF8, "application/json"), "request");
-
-    //        // Send the request using HttpClient
-    //        using var httpClient = new HttpClient();
-    //        var response = await httpClient.PostAsync("https://habhaaa-001-site1.qtempurl.com/api/AppImage/JsonAddImages", imageContent);
-
-    //        // Read and handle the response
-    //        string responseContent = await response.Content.ReadAsStringAsync();
-
-    //        if (response.IsSuccessStatusCode)
-    //        {
-    //            await DisplayAlert("Success", "Image uploaded successfully!", "OK");
-    //        }
-    //        else
-    //        {
-    //            await DisplayAlert("Error", $"Upload failed! Status: {response.StatusCode}, Message: {responseContent}", "OK");
-    //        }
-
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
-    //    }
-    //    //try
-    //    //{
-    //    //    string base64Image = Convert.ToBase64String(_imageBytes);
-
-    //    //    var appImage = new
-    //    //    {
-    //    //        BoardinghouseId = _boardingHouse?.BoardinghouseId,
-    //    //        QRCodeImageId = (int?)null,
-    //    //        UserId = (string?)null,
-    //    //        Description = "new",
-    //    //        ImageBase64 = base64Image 
-    //    //    };
-
-    //    //    string json = JsonSerializer.Serialize(appImage);
-    //    //    var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-    //    //    using var httpClient = new HttpClient();
-    //    //    var response = await httpClient.PostAsync("https://habhaaa-001-site1.qtempurl.com/api/AppImage/JsonAddImages", content);
-
-    //    //    string responseContent = await response.Content.ReadAsStringAsync();
-
-    //    //    if (response.IsSuccessStatusCode)
-    //    //    {
-    //    //        await DisplayAlert("Success", "Image uploaded successfully!", "OK");
-    //    //    }
-    //    //    else
-    //    //    {
-    //    //        await DisplayAlert("Error", $"Upload failed! Status: {response.StatusCode}, Message: {responseContent}", "OK");
-    //    //    }
-
-    //    //}
-    //    //catch (Exception ex)
-    //    //{
-    //    //    await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
-    //    //}
-    //    //try
-    //    //{
-    //    //    // Assuming you already have _boardingHouse and _imageBytes
-    //    //    //int id = _boardingHouse.BoardinghouseId;  // BoardinghouseId from the selected boarding house
-    //    //    //var imageByteArray = _imageBytes;         // Image byte array from the selected image
-
-    //    //    var appImage = new AppImage
-    //    //    {
-    //    //        BoardinghouseId = _boardingHouse.BoardinghouseId,  
-    //    //        QRCodeImageId = null, 
-    //    //        UserId = "", 
-    //    //        Description = "", 
-    //    //        ImageData = _imageBytes 
-    //    //    };
-
-    //    //    int boardinghouseId = appImage.BoardinghouseId ?? 0; 
-    //    //    byte[] imageByteArray = _imageBytes; 
-    //    //    string userId = appImage.UserId;
-    //    //    string description = appImage.Description;
-
-    //    //    if (imageByteArray == null || imageByteArray.Length == 0)
-    //    //    {
-    //    //        await DisplayAlert("Error", "No image selected.", "OK");
-    //    //        return;
-    //    //    }
-
-    //    //    using (var content = new MultipartFormDataContent())
-    //    //    {
-    //    //        // Ensure you're using the correct variables here
-    //    //        //content.Add(new StringContent(appImage.BoardinghouseId?.ToString() ?? string.Empty), "boardinghouseId");
-    //    //        //content.Add(new StringContent(appImage.QRCodeImageId?.ToString() ?? string.Empty), "qrCodeImageId");
-    //    //        //content.Add(new StringContent(appImage.UserId), "userId");
-    //    //        //content.Add(new StringContent(appImage.Description), "description");
-    //    //        content.Add(new StringContent(boardinghouseId.ToString()), "boardinghouseId");
-    //    //        content.Add(new StringContent(appImage.QRCodeImageId?.ToString() ?? string.Empty), "qrCodeImageId");
-    //    //        content.Add(new StringContent(userId), "userId");
-    //    //        content.Add(new StringContent(description), "description");
-
-    //    //        // Prepare the image byte array for uploading
-    //    //        var fileContent = new ByteArrayContent(imageByteArray);
-    //    //        fileContent.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg");  // Adjust the content type based on your image format
-    //    //        content.Add(fileContent, "image", "image.jpg");  // Adjust filename if needed
-
-    //    //        // Make the POST request to the API
-    //    //        var response = await _httpClient.PostAsync("https://habhaaa-001-site1.qtempurl.com/api/AppImage/AddImages", content);
-
-    //    //        // Handle the response from the server
-    //    //        if (response.IsSuccessStatusCode)
-    //    //        {
-    //    //            await DisplayAlert("Success", "Image uploaded successfully!", "OK");
-    //    //        }
-    //    //        else
-    //    //        {
-    //    //            await DisplayAlert("Error", "Image upload failed.", "OK");
-    //    //        }
-    //    //    }
-    //    //}
-    //    //catch (Exception ex)
-    //    //{
-    //    //    // Handle exceptions
-    //    //    await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
-    //    //}
-    //}
-
-
-    //private async void OnUploadImage_Clicked(object sender, EventArgs e)
-    //{
-    //    int id = _boardingHouse.BoardinghouseId;
-
-    //    using (var content = new MultipartFormDataContent())
-    //    {
-    //        content.Add(new StringContent(boardinghouseId.ToString()), "boardinghouseId");
-    //        content.Add(new StringContent(qrCodeImageId.ToString()), "qrCodeImageId");
-    //        content.Add(new StringContent(userId), "userId");
-    //        content.Add(new StringContent(description), "description");
-
-    //        var fileContent = new ByteArrayContent(imageByteArray);
-    //        fileContent.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg");     
-    //        content.Add(fileContent, "image", "image.jpg");
-
-    //        var response = await _httpClient.PostAsync("https://yourapi.com/api/AddImages", content);
-    //        // Handle response
-    //    }
-
-
-    //    //if (SelectedImage.IsVisible)
-    //    //{
-    //    //    if (!string.IsNullOrEmpty(_base64Image))
-    //    //    {
-    //    //        await _tenantService.UploadImageAsync(_base64Image, id);
-    //    //        await DisplayAlert("Success", "Image uploaded successfully!", "OK");
-    //    //    }
-    //    //    else
-    //    //    {
-    //    //        StatusMessage.Text = "No image selected.";
-    //    //    }
-    //    //}
-    //    //else
-    //    //{
-    //    //    StatusMessage.Text = "Please select an image first.";
-    //    //}
-    //}
-
     private async void UploadQRCode_Clicked(object sender, EventArgs e)
     {
-        int id = _boardingHouse.BoardinghouseId;
-
-        var (token, roleName) = await GetAuthenticationTokenAndRoleAsync();
-
         if (!SelectedImage.IsVisible)
         {
             StatusMessage.Text = "Please select an image first.";
@@ -682,18 +501,30 @@ public partial class CustomizeBoardingHousePage : ContentPage
             return;
         }
 
-        bool isSuccess = await _tenantService.AddPaymentQrImageAsync(_base64Image, id, _boardingHouse.TenantId, token);
-
-        if (isSuccess)
+        var appImage = new AppImage
         {
+            Description = "QR code image",
+            ImageData = _imageBytes,
+            BoardinghouseId = _boardingHouse.BoardinghouseId,
+            QRCodeImageId = _boardingHouse.BoardinghouseId, // Assuming QRCodeImageId is the same as BoardinghouseId for simplicity
+            UserId = _boardingHouse.TenantId
+        };
+
+        // Tenant service
+        bool uploadSuccessful = await _tenantService.UploadWithJsonImageAsync(appImage, _imageBytes);
+
+        if (uploadSuccessful)
+        {
+            Console.WriteLine("QR code image uploaded successfully!");
             await DisplayAlert("Success", "QR code image uploaded successfully!", "OK");
+
+            // Retrieve and display the uploaded QR code image
+            await LoadImages();
         }
         else
         {
+            Console.WriteLine("Failed to upload QR code image.");
             await DisplayAlert("Error", "Failed to upload QR code image.", "OK");
         }
-        
     }
-   
-
 }

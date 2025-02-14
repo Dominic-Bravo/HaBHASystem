@@ -55,7 +55,6 @@ public class MonoPackageManager_Resources {
 		"MimeKit.dll",
 		"Newtonsoft.Json.dll",
 		"System.Diagnostics.DiagnosticSource.dll",
-		"System.Formats.Asn1.dll",
 		"System.Security.Cryptography.Pkcs.dll",
 		"Xamarin.Android.Glide.dll",
 		"Xamarin.Android.Glide.Annotations.dll",
@@ -178,6 +177,9 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Maui.Controls.resources.dll",
 		"Microsoft.Maui.Controls.resources.dll",
 		"Microsoft.Maui.Controls.resources.dll",
+		"Microsoft.Maui.Controls.HotReload.Forms.dll",
+		"Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll",
+		"Microsoft.VisualStudio.DesignTools.TapContract.dll",
 		"_Microsoft.Android.Resource.Designer.dll",
 	};
 	public static String[] Dependencies = new String[]{

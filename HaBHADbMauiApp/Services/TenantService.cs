@@ -275,27 +275,34 @@ namespace HaBHADbMauiApp.Services
         }
 
 
-        public async Task DeleteOwnerBoardingHouseAsync(int id)
+        public async Task<bool> DeleteOwnerBoardingHouseAsync(int id)
         {
             var httpClient = httpClientFactory.CreateClient("custom-httpclient");
 
             try
             {
-
                 var response = await httpClient.DeleteAsync($"/api/TenantBoardingHouse/{id}");
 
                 if (response.IsSuccessStatusCode)
                 {
+                    return true;
                 }
                 else
                 {
+                    var errorMessage = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine($"Failed to delete boarding house: {errorMessage}");
+                    await Shell.Current.DisplayAlert("Error", $"Failed to delete boarding house: {errorMessage}", "OK");
+                    return false;
                 }
             }
             catch (Exception ex)
             {
+                Console.WriteLine($"An error occurred: {ex.Message}");
                 await Shell.Current.DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
+                return false;
             }
         }
+
 
         public async Task<bool> UploadImageAsync(string base64Image, int boardinghouseId)
         {

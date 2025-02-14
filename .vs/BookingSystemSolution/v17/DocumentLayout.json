@@ -1,0 +1,811 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\pages\\tenant\\tenantlistboardinghouse.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\pages\\tenant\\tenantlistboardinghouse.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\pages\\mapui\\tenantmap.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\pages\\mapui\\tenantmap.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Services\\TenantService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\pages\\mapui\\tenantmap.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\pages\\mapui\\tenantmap.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\pages\\tenant\\tenantlistboardinghouse.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\pages\\tenant\\tenantlistboardinghouse.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jayve\\AppData\\Local\\Temp\\VSGeneratedDocuments\\751823e2-56c0-bdfc-311d-c13ee8bf30ef\\MapforMaui.MapUI.TenantMap.WinRTVtable.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\pages\\tenant\\detailednotificationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\pages\\tenant\\detailednotificationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\pages\\tenant\\customizeboardinghousepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\pages\\tenant\\customizeboardinghousepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\pages\\tenant\\customizeboardinghousepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\pages\\tenant\\customizeboardinghousepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\services\\tenantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\services\\tenantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57B71FAD-7054-4242-A057-4A6F729E3782}|HaBHAServer\\HaBHAServer.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhaserver\\newcontrollers\\tenantboardinghousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57B71FAD-7054-4242-A057-4A6F729E3782}|HaBHAServer\\HaBHAServer.csproj|solutionrelative:habhaserver\\newcontrollers\\tenantboardinghousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\pages\\tenant\\detailednotificationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\pages\\tenant\\detailednotificationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\pages\\client\\bookingdetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\pages\\client\\bookingdetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57B71FAD-7054-4242-A057-4A6F729E3782}|HaBHAServer\\HaBHAServer.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhaserver\\newcontrollers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57B71FAD-7054-4242-A057-4A6F729E3782}|HaBHAServer\\HaBHAServer.csproj|solutionrelative:habhaserver\\newcontrollers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57B71FAD-7054-4242-A057-4A6F729E3782}|HaBHAServer\\HaBHAServer.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhaserver\\newcontrollers\\bookingtransactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57B71FAD-7054-4242-A057-4A6F729E3782}|HaBHAServer\\HaBHAServer.csproj|solutionrelative:habhaserver\\newcontrollers\\bookingtransactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57B71FAD-7054-4242-A057-4A6F729E3782}|HaBHAServer\\HaBHAServer.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhaserver\\newrepo\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57B71FAD-7054-4242-A057-4A6F729E3782}|HaBHAServer\\HaBHAServer.csproj|solutionrelative:habhaserver\\newrepo\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\models\\appimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\models\\appimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\models\\qrimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\models\\qrimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\models\\bookingdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\models\\bookingdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\models\\bookingapprovaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\models\\bookingapprovaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\models\\boardinghousewtotalpricedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\models\\boardinghousewtotalpricedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|c:\\users\\jayve\\desktop\\push\\finalbookingsystem\\habhadbmauiapp\\models\\boardinghouselocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE2DF887-7FBD-47D3-9015-E20387629056}|HaBHADbMauiApp\\HaBHADbMauiApp.csproj|solutionrelative:habhadbmauiapp\\models\\boardinghouselocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Pages\\Tenant\\DetailedNotificationPage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\LocationsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Models\\AppImage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\MauiProgram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewModels\\AppImage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\NewPage1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\NewPage1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\TenantBoardingHouseController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewRepo\\LocationRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\BoardingHouseImageController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewRepo\\BoardingHouseImageRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\Location\\GetLocationsByBoardinghouseId.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewModels\\BhLocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\TenantBoardingHouse\\AddBoardingHouse.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\Location\\DeleteLocation.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\Location\\CreateLocation.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\Locations.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\ClientRequests.sql||{2366CF66-2394-4701-AFCA-37ED7FD41648}|dbo.ClientRequests_0.00"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\BookingTransaction.sql||{2366CF66-2394-4701-AFCA-37ED7FD41648}|dbo.BookingTransactions_0.00"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\Locations.sql||{2366CF66-2394-4701-AFCA-37ED7FD41648}|dbo.Locations_0.00"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewRepo\\AppImageRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\AppImageController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 213,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TenantService.cs",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Services\\TenantService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Services\\TenantService.cs",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Services\\TenantService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Services\\TenantService.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:21:36.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CustomizeBoardingHousePage.xaml",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAAAGcAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-14T00:21:36.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DetailedNotificationPage.xaml",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Pages\\Tenant\\DetailedNotificationPage.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Pages\\Tenant\\DetailedNotificationPage.xaml",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Pages\\Tenant\\DetailedNotificationPage.xaml",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Pages\\Tenant\\DetailedNotificationPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-14T00:21:36.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CustomizeBoardingHousePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml.cs",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAWwFEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:21:36.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LocationsController.cs",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\LocationsController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\LocationsController.cs",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\LocationsController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\LocationsController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAkwCcAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:21:36.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AppImage.cs",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Models\\AppImage.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Models\\AppImage.cs",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Models\\AppImage.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\Models\\AppImage.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:21:36.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\MauiProgram.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\MauiProgram.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB8AAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:21:36.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AppImage.cs",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewModels\\AppImage.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewModels\\AppImage.cs",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewModels\\AppImage.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewModels\\AppImage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:21:36.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "NewPage1.xaml",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\NewPage1.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\NewPage1.xaml",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\NewPage1.xaml",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\NewPage1.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-14T00:21:36.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "NewPage1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\NewPage1.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\NewPage1.xaml.cs",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\NewPage1.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\BookingNewUI\\CapsS\\LastNa\\HaBHADapperSolution\\HaBHADbMauiApp\\NewPage1.xaml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwCUAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:21:36.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "TenantBoardingHouseController.cs",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\TenantBoardingHouseController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\TenantBoardingHouseController.cs",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\TenantBoardingHouseController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\TenantBoardingHouseController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwCcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:21:36.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "LocationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewRepo\\LocationRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewRepo\\LocationRepository.cs",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewRepo\\LocationRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewRepo\\LocationRepository.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAD4v1AAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:21:36.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "BoardingHouseImageController.cs",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\BoardingHouseImageController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\BoardingHouseImageController.cs",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\BoardingHouseImageController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\BoardingHouseImageController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:21:36.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "BoardingHouseImageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewRepo\\BoardingHouseImageRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewRepo\\BoardingHouseImageRepository.cs",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewRepo\\BoardingHouseImageRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewRepo\\BoardingHouseImageRepository.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:21:36.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "GetLocationsByBoardinghouseId.sql",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\Location\\GetLocationsByBoardinghouseId.sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\Location\\GetLocationsByBoardinghouseId.sql",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\Location\\GetLocationsByBoardinghouseId.sql",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\Location\\GetLocationsByBoardinghouseId.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-14T00:21:36.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "BhLocation.cs",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewModels\\BhLocation.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewModels\\BhLocation.cs",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewModels\\BhLocation.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewModels\\BhLocation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:21:36.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AddBoardingHouse.sql",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\TenantBoardingHouse\\AddBoardingHouse.sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\TenantBoardingHouse\\AddBoardingHouse.sql",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\TenantBoardingHouse\\AddBoardingHouse.sql",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\TenantBoardingHouse\\AddBoardingHouse.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-14T00:21:36.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "DeleteLocation.sql",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\Location\\DeleteLocation.sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\Location\\DeleteLocation.sql",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\Location\\DeleteLocation.sql",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\Location\\DeleteLocation.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-14T00:21:36.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "CreateLocation.sql",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\Location\\CreateLocation.sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\Location\\CreateLocation.sql",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\Location\\CreateLocation.sql",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\StoredProcedures\\Location\\CreateLocation.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-14T00:21:36.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Locations.sql",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\Locations.sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\Locations.sql",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\Locations.sql",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\Locations.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-14T00:21:36.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ClientRequests.sql",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\ClientRequests.sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\ClientRequests.sql",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\ClientRequests.sql",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\ClientRequests.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-14T00:21:36.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "BookingTransaction.sql",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\BookingTransaction.sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\BookingTransaction.sql",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\BookingTransaction.sql",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\BookingTransaction.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-14T00:21:36.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Locations.sql",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\Locations.sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\Locations.sql",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\Locations.sql",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHADb\\dbo\\Tables\\Locations.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-14T00:21:36.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AppImageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewRepo\\AppImageRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewRepo\\AppImageRepository.cs",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewRepo\\AppImageRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewRepo\\AppImageRepository.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAgwDkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:21:36.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "AppImageController.cs",
+              "DocumentMoniker": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\AppImageController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\AppImageController.cs",
+              "ToolTip": "C:\\Users\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\AppImageController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\63966\\Desktop\\Capstone Projects\\HaBHASolution\\HaBHAServer\\NewControllers\\AppImageController.cs",
+              "ViewState": "AQIAAPIAAAAAAAAAAAAswBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:21:36.943Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 367,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TenantListBoardingHouse.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\Tenant\\TenantListBoardingHouse.xaml.cs",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Pages\\Tenant\\TenantListBoardingHouse.xaml.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\Tenant\\TenantListBoardingHouse.xaml.cs",
+              "RelativeToolTip": "HaBHADbMauiApp\\Pages\\Tenant\\TenantListBoardingHouse.xaml.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T02:35:27.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TenantMap.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\MapUI\\TenantMap.xaml.cs",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Pages\\MapUI\\TenantMap.xaml.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\MapUI\\TenantMap.xaml.cs",
+              "RelativeToolTip": "HaBHADbMauiApp\\Pages\\MapUI\\TenantMap.xaml.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAGcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T05:13:23.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TenantMap.xaml",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\MapUI\\TenantMap.xaml",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Pages\\MapUI\\TenantMap.xaml",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\MapUI\\TenantMap.xaml",
+              "RelativeToolTip": "HaBHADbMauiApp\\Pages\\MapUI\\TenantMap.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-14T05:13:21.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TenantListBoardingHouse.xaml",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\Tenant\\TenantListBoardingHouse.xaml",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Pages\\Tenant\\TenantListBoardingHouse.xaml",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\Tenant\\TenantListBoardingHouse.xaml",
+              "RelativeToolTip": "HaBHADbMauiApp\\Pages\\Tenant\\TenantListBoardingHouse.xaml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAYwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-14T04:44:42.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MapforMaui.MapUI.TenantMap.WinRTVtable.g.cs [generated]",
+              "DocumentMoniker": "C:\\Users\\jayve\\AppData\\Local\\Temp\\VSGeneratedDocuments\\751823e2-56c0-bdfc-311d-c13ee8bf30ef\\MapforMaui.MapUI.TenantMap.WinRTVtable.g.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\VSGeneratedDocuments\\751823e2-56c0-bdfc-311d-c13ee8bf30ef\\MapforMaui.MapUI.TenantMap.WinRTVtable.g.cs",
+              "ToolTip": "MapforMaui.MapUI.TenantMap.WinRTVtable.g.cs [generated by Generator.WinRTAotSourceGenerator]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "OverriddenToolTip": "MapforMaui.MapUI.TenantMap.WinRTVtable.g.cs [generated by Generator.WinRTAotSourceGenerator]",
+              "WhenOpened": "2025-02-14T05:12:11.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DetailedNotificationPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\Tenant\\DetailedNotificationPage.xaml.cs",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Pages\\Tenant\\DetailedNotificationPage.xaml.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\Tenant\\DetailedNotificationPage.xaml.cs",
+              "RelativeToolTip": "HaBHADbMauiApp\\Pages\\Tenant\\DetailedNotificationPage.xaml.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAGsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T02:30:39.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomizeBoardingHousePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml.cs",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml.cs",
+              "RelativeToolTip": "HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml.cs",
+              "ViewState": "AgIAAK4BAAAAAAAAAAAAADQBAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:28:09.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TenantService.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Services\\TenantService.cs",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Services\\TenantService.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Services\\TenantService.cs",
+              "RelativeToolTip": "HaBHADbMauiApp\\Services\\TenantService.cs",
+              "ViewState": "AgIAAFsBAAAAAAAAAAAAAHEBAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:32:17.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomizeBoardingHousePage.xaml",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml",
+              "RelativeToolTip": "HaBHADbMauiApp\\Pages\\Tenant\\CustomizeBoardingHousePage.xaml",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAAADkAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-14T00:33:13.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TenantBoardingHouseController.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHAServer\\NewControllers\\TenantBoardingHouseController.cs",
+              "RelativeDocumentMoniker": "HaBHAServer\\NewControllers\\TenantBoardingHouseController.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHAServer\\NewControllers\\TenantBoardingHouseController.cs",
+              "RelativeToolTip": "HaBHAServer\\NewControllers\\TenantBoardingHouseController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T04:11:37.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DetailedNotificationPage.xaml",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\Tenant\\DetailedNotificationPage.xaml",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Pages\\Tenant\\DetailedNotificationPage.xaml",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\Tenant\\DetailedNotificationPage.xaml",
+              "RelativeToolTip": "HaBHADbMauiApp\\Pages\\Tenant\\DetailedNotificationPage.xaml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-14T03:21:48.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BookingDetailsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\Client\\BookingDetailsPage.xaml.cs",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Pages\\Client\\BookingDetailsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Pages\\Client\\BookingDetailsPage.xaml.cs",
+              "RelativeToolTip": "HaBHADbMauiApp\\Pages\\Client\\BookingDetailsPage.xaml.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T02:36:13.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClientService.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Services\\ClientService.cs",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Services\\ClientService.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Services\\ClientService.cs",
+              "RelativeToolTip": "HaBHADbMauiApp\\Services\\ClientService.cs",
+              "ViewState": "AgIAAMgAAAAAAAAAAAD4v+AAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T02:38:11.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Services\\AccountService.cs",
+              "RelativeToolTip": "HaBHADbMauiApp\\Services\\AccountService.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwDEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T03:08:40.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHAServer\\NewControllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "HaBHAServer\\NewControllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHAServer\\NewControllers\\BookingController.cs",
+              "RelativeToolTip": "HaBHAServer\\NewControllers\\BookingController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAADcAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T03:03:15.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BookingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHAServer\\NewRepo\\BookingRepository.cs",
+              "RelativeDocumentMoniker": "HaBHAServer\\NewRepo\\BookingRepository.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHAServer\\NewRepo\\BookingRepository.cs",
+              "RelativeToolTip": "HaBHAServer\\NewRepo\\BookingRepository.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T03:05:45.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BookingTransactionsController.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHAServer\\NewControllers\\BookingTransactionsController.cs",
+              "RelativeDocumentMoniker": "HaBHAServer\\NewControllers\\BookingTransactionsController.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHAServer\\NewControllers\\BookingTransactionsController.cs",
+              "RelativeToolTip": "HaBHAServer\\NewControllers\\BookingTransactionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T03:06:26.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Models\\Booking.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Models\\Booking.cs",
+              "RelativeToolTip": "HaBHADbMauiApp\\Models\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:50:45.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AppImage.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Models\\AppImage.cs",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Models\\AppImage.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Models\\AppImage.cs",
+              "RelativeToolTip": "HaBHADbMauiApp\\Models\\AppImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:49:56.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "QrImage.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Models\\QrImage.cs",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Models\\QrImage.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Models\\QrImage.cs",
+              "RelativeToolTip": "HaBHADbMauiApp\\Models\\QrImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:50:50.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BookingDetails.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Models\\BookingDetails.cs",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Models\\BookingDetails.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Models\\BookingDetails.cs",
+              "RelativeToolTip": "HaBHADbMauiApp\\Models\\BookingDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:50:47.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BookingApprovalDto.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Models\\BookingApprovalDto.cs",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Models\\BookingApprovalDto.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Models\\BookingApprovalDto.cs",
+              "RelativeToolTip": "HaBHADbMauiApp\\Models\\BookingApprovalDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:50:46.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BoardinghousewTotalPriceDto.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Models\\BoardinghousewTotalPriceDto.cs",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Models\\BoardinghousewTotalPriceDto.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Models\\BoardinghousewTotalPriceDto.cs",
+              "RelativeToolTip": "HaBHADbMauiApp\\Models\\BoardinghousewTotalPriceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:50:41.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BoardingHouseLocation.cs",
+              "DocumentMoniker": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Models\\BoardingHouseLocation.cs",
+              "RelativeDocumentMoniker": "HaBHADbMauiApp\\Models\\BoardingHouseLocation.cs",
+              "ToolTip": "C:\\Users\\jayve\\Desktop\\push\\FinalBookingSystem\\HaBHADbMauiApp\\Models\\BoardingHouseLocation.cs",
+              "RelativeToolTip": "HaBHADbMauiApp\\Models\\BoardingHouseLocation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:50:38.923Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 174,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 277,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HaBHAServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+884a5d1332356b79e009a42b30dd41c0a51791dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("HaBHAServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HaBHAServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

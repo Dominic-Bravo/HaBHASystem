@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HaBHADbMauiApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3ce56b4352cab47078e47d85a6518cf4bd1cd524")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+884a5d1332356b79e009a42b30dd41c0a51791dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("HaBHADbMauiApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HaBHADbMauiApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
