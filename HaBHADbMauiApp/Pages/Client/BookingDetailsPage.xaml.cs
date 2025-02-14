@@ -78,17 +78,16 @@ public partial class BookingDetailsPage : ContentPage
 
             if (isSuccess)
             {
-                await DisplayAlert("title", "Approved succesfully.", "Ok");
+                await DisplayAlert("Success", "Booking approved successfully.", "Ok");
             }
             else
             {
-                await DisplayAlert("title", "Something went wrong, Try Again..", "Ok");
+                await DisplayAlert("Error", "Something went wrong, try again.", "Ok");
             }
-            
         }
-        catch
+        catch (Exception ex)
         {
-
+            await DisplayAlert("Error", $"An error occurred: {ex.Message}", "Ok");
         }
         finally
         {

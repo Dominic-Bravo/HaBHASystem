@@ -99,9 +99,8 @@
             <Button
                 x:Name="BtnAddMaps"
                 Text="Add Maps"
-             Command="{Binding AddMapsCommand}"
-             BindingContext="{Binding SelectedAppUser}"
-             Clicked="BtnAddMaps_Clicked_1" />
+    
+             Clicked="BtnAddMaps_Clicked" />
             <Button x:Name="BtnAdd" Clicked="BtnAdd_Clicked_1"  Text="Add" Grid.Column="1" TextColor="White" BackgroundColor="Blue"/>
             <Button x:Name="BtnNotifications" Clicked="BtnNotifications_Clicked" TextColor="White" Text="Notifications" Grid.Column="2" BackgroundColor="Blue"/>
         </Grid>

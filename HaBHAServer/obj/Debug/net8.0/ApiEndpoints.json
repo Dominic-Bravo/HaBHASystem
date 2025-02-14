@@ -1,0 +1,1063 @@
+[
+  {
+    "ContainingType": "HaBHAServer.Controllers.AuthenticationController.AccountController",
+    "Method": "AssignRoleToUser",
+    "RelativePath": "api/Account/AssignRole",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userRole",
+        "Type": "HaBHAServer.Models.User.UserRole",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.Controllers.AuthenticationController.AccountController",
+    "Method": "GetUsersAsync",
+    "RelativePath": "api/Account/GetUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[HaBHAServer.Models.User.ApplicationUser, HaBHAServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "HaBHAServer.Controllers.AuthenticationController.AccountController",
+    "Method": "GetUserByClientId",
+    "RelativePath": "api/Account/GetUserByClientId/{clientId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.Controllers.AuthenticationController.AccountController",
+    "Method": "GetUserByTenantId",
+    "RelativePath": "api/Account/GetUserByTenantId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.Controllers.AuthenticationController.AccountController",
+    "Method": "Login",
+    "RelativePath": "api/Account/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "HaBHAServer.NewModels.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.Controllers.AuthenticationController.AccountController",
+    "Method": "Register",
+    "RelativePath": "api/Account/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "HaBHAServer.NewModels.RegisterModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.Controllers.AuthenticationController.AccountController",
+    "Method": "UpdatePassword",
+    "RelativePath": "api/Account/UpdatePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HaBHAServer.NewModels.ResetPasswordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.Controllers.AuthenticationController.AccountController",
+    "Method": "UpdateProfileByEmail",
+    "RelativePath": "api/Account/UpdateProfileByEmail",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "HaBHAServer.NewModels.UpdateProfileDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.AppImageController",
+    "Method": "GetImages",
+    "RelativePath": "api/AppImage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "boardinghouseId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "qrCodeImageId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.AppImageController",
+    "Method": "GetImageById",
+    "RelativePath": "api/AppImage/dataonlyGetImageById/{imageId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "imageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.AppImageController",
+    "Method": "GetAllImagesAsync",
+    "RelativePath": "api/AppImage/GetAllImages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.AppImageController",
+    "Method": "GetsasImageById",
+    "RelativePath": "api/AppImage/GetImageById/{imageId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "imageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.AppImageController",
+    "Method": "GetImagesByBoardinghouseIdAsync",
+    "RelativePath": "api/AppImage/GetImagesByBoardinghouseId/{boardinghouseId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "boardinghouseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.AppImageController",
+    "Method": "GetImagesByQRCodeImageIdAsync",
+    "RelativePath": "api/AppImage/GetImagesByQRCodeImageId/{qrCodeImageId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "qrCodeImageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.AppImageController",
+    "Method": "GetImagesByUserIdAsync",
+    "RelativePath": "api/AppImage/GetImagesByUserId/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.AppImageController",
+    "Method": "GetImagesByTokenUserIdAsync",
+    "RelativePath": "api/AppImage/GetImagesByUserIdviaToken",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.AppImageController",
+    "Method": "AddJsonAppImage",
+    "RelativePath": "api/AppImage/JsonAddImages",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.BoardingHouseImageController",
+    "Method": "DeleteBoardingHouseImage",
+    "RelativePath": "api/BoardingHouseImage/{imageId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "imageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.BoardingHouseImageController",
+    "Method": "AddBoardingHouseImage",
+    "RelativePath": "api/BoardingHouseImage/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "image",
+        "Type": "HaBHAServer.NewModels.BoardingHouseImage",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.BoardingHouseImageController",
+    "Method": "GetBoardingHouseImagesByBoardinghouseId",
+    "RelativePath": "api/BoardingHouseImage/ByBoardinghouse/{boardinghouseId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "boardinghouseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.BoardingHouseImageController",
+    "Method": "DeleteAllBoardingHouseImages",
+    "RelativePath": "api/BoardingHouseImage/DeleteAll/{boardinghouseId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "boardinghouseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.BoardingHouseImageController",
+    "Method": "UpdateBoardingHouseImage",
+    "RelativePath": "api/BoardingHouseImage/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "image",
+        "Type": "HaBHAServer.NewModels.BoardingHouseImage",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.BookingController",
+    "Method": "AddBooking",
+    "RelativePath": "api/Booking",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "booking",
+        "Type": "HaBHAServer.NewModels.Booking",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.BookingController",
+    "Method": "GetBookingById",
+    "RelativePath": "api/Booking/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.BookingController",
+    "Method": "GetAmenitiesByBookingId",
+    "RelativePath": "api/Booking/Amenities/{bookingId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.BookingController",
+    "Method": "DeleteBooking",
+    "RelativePath": "api/Booking/DeleteBooking/{bookingId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "boardinghouseId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "bookingId",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.BookingController",
+    "Method": "GetNewestBoardinghouseIdByClientIdAsync",
+    "RelativePath": "api/Booking/newestBoardinghouse",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.BookingController",
+    "Method": "GetPendingBookings",
+    "RelativePath": "api/Booking/Pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.BookingTransactionsController",
+    "Method": "AddBookingTransaction",
+    "RelativePath": "api/BookingTransactions/AddBookingTransaction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HaBHAServer.NewModels.BookingTransactionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.BookingTransactionsController",
+    "Method": "GetBookingTransactionById",
+    "RelativePath": "api/BookingTransactions/GetBookingTransactionById/{transactionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transactionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.LocationsController",
+    "Method": "GetLocationById",
+    "RelativePath": "api/Locations/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.LocationsController",
+    "Method": "CreateLocation",
+    "RelativePath": "api/Locations/CreateLocation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "location",
+        "Type": "HaBHAServer.NewModels.BhLocation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.LocationsController",
+    "Method": "DeleteLocation",
+    "RelativePath": "api/Locations/DeleteLocation/{locationId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "locationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.LocationsController",
+    "Method": "GetAllLocations",
+    "RelativePath": "api/Locations/GetAllLocations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.LocationsController",
+    "Method": "GetLocationsByBoardinghouseId",
+    "RelativePath": "api/Locations/GetLocationsByBoardinghouseId/{boardinghouseId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "boardinghouseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.QrImageController",
+    "Method": "GetQrImage",
+    "RelativePath": "api/QrImage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.QrImageController",
+    "Method": "DeleteQrImage",
+    "RelativePath": "api/QrImage/{qrImageId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "qrImageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.QrImageController",
+    "Method": "CreateQrImageAsync",
+    "RelativePath": "api/QrImage/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "HaBHAServer.NewModels.QrImage",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.QrImageController",
+    "Method": "GetQrImagesByTenantId",
+    "RelativePath": "api/QrImage/GetImageBy/{tenantId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.Controllers.SuperAdminController.SuperAdminController",
+    "Method": "ApproveTenant",
+    "RelativePath": "api/SuperAdmin/ApproveTenant/{tenantId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.Controllers.SuperAdminController.SuperAdminController",
+    "Method": "RejectTenant",
+    "RelativePath": "api/SuperAdmin/RejectTenant/{tenantId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.Controllers.SuperAdminController.SuperAdminController",
+    "Method": "GetUnapprovedTenants",
+    "RelativePath": "api/SuperAdmin/UnapprovedTenants",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[HaBHAServer.Models.User.ApplicationUser, HaBHAServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantAmenityController",
+    "Method": "AddAmenity",
+    "RelativePath": "api/TenantAmenity",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "amenity",
+        "Type": "HaBHAServer.NewModels.TenantAmenity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantAmenityController",
+    "Method": "DeleteAmenity",
+    "RelativePath": "api/TenantAmenity/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantAmenityController",
+    "Method": "GetAmenitiesByBoardinghouseId",
+    "RelativePath": "api/TenantAmenity/ByBoardinghouse/{boardinghouseId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "boardinghouseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantAmenityController",
+    "Method": "UpdateAmenity",
+    "RelativePath": "api/TenantAmenity/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "amenity",
+        "Type": "HaBHAServer.NewModels.TenantAmenity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantApproveController",
+    "Method": "ApproveOrRejectBooking",
+    "RelativePath": "api/TenantApprove/ApproveOrReject",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "HaBHAServer.NewModels.ApproveRejectBookingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantApproveController",
+    "Method": "GetPendingBookingsByTenantId",
+    "RelativePath": "api/TenantApprove/PendingBookingsbytenantId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantBoardingHouseController",
+    "Method": "GetById",
+    "RelativePath": "api/TenantBoardingHouse/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantBoardingHouseController",
+    "Method": "DeleteBoardingHouse",
+    "RelativePath": "api/TenantBoardingHouse/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantBoardingHouseController",
+    "Method": "AddBoardingHouse",
+    "RelativePath": "api/TenantBoardingHouse/AddTenantBoardingHouse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "boardingHouse",
+        "Type": "HaBHAServer.NewModels.TenantBoardingHouse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantBoardingHouseController",
+    "Method": "GetAvailableBoardingHouses",
+    "RelativePath": "api/TenantBoardingHouse/available",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantBoardingHouseController",
+    "Method": "GetBoardingHousesclieByTenantId",
+    "RelativePath": "api/TenantBoardingHouse/ClientBoardingHouse",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantBoardingHouseController",
+    "Method": "GetAllBoardingHouses",
+    "RelativePath": "api/TenantBoardingHouse/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantBoardingHouseController",
+    "Method": "GetBoardingHouse",
+    "RelativePath": "api/TenantBoardingHouse/GetBoardingHouseBy{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantBoardingHouseController",
+    "Method": "GetTenantBoardingHouseCountsByTenantId",
+    "RelativePath": "api/TenantBoardingHouse/GetTenantBoardingHouseCounts/{tenantId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantBoardingHouseController",
+    "Method": "GetTotalPrice",
+    "RelativePath": "api/TenantBoardingHouse/MinMaxPrice",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "minimumPrice",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "maximumPrice",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantBoardingHouseController",
+    "Method": "RemoveClientFromBoardingHouse",
+    "RelativePath": "api/TenantBoardingHouse/RemoveClient",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "boardinghouseId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "clientId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantBoardingHouseController",
+    "Method": "GetBoardingHousesByTenantId",
+    "RelativePath": "api/TenantBoardingHouse/tenantBoardingHouse",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.NewControllers.TenantBoardingHouseController",
+    "Method": "UpdateBoardingHouse",
+    "RelativePath": "api/TenantBoardingHouse/UpdateBoardingHouse",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "boardingHouse",
+        "Type": "HaBHAServer.NewModels.TenantBoardingHouse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.Controllers.TenanBoardingHouseManagementController.ValuesController",
+    "Method": "GetImage",
+    "RelativePath": "api/Values/Image/{imageId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "imageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.Controllers.TenanBoardingHouseManagementController.ValuesController",
+    "Method": "GetImagesByBoardingHouseId",
+    "RelativePath": "api/Values/ImagesByBoardinghouseId/{BoardingHouseId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BoardingHouseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.Controllers.TenanBoardingHouseManagementController.ValuesController",
+    "Method": "UploadImage",
+    "RelativePath": "api/Values/NewImageupload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BhId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HaBHAServer.Controllers.TenanBoardingHouseManagementController.ValuesController",
+    "Method": "UploadImagewithboardinghosue",
+    "RelativePath": "api/Values/NewImageuploadwithBoardinghouse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "BoardinghouseId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

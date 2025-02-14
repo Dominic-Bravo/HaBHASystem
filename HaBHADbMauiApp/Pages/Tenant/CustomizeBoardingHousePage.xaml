@@ -7,101 +7,87 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <!-- Static Header Labels -->
-        <VerticalStackLayout Padding="10">
-            <Frame CornerRadius="50" WidthRequest="350" HeightRequest="50" BackgroundColor="Black" >
+        <VerticalStackLayout Padding="10" Grid.Row="0">
+            <Frame CornerRadius="50" WidthRequest="350" HeightRequest="50" BackgroundColor="Black">
                 <Label Text="Customize Boarding House" HeightRequest="25" TextColor="White" HorizontalOptions="Center" Margin="5" FontAttributes="None" FontSize="20"/>
             </Frame>
         </VerticalStackLayout>
 
         <!-- Scrollable Content -->
-        <ScrollView Grid.Row="2">
-            <StackLayout>
-                <StackLayout Margin="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <Frame CornerRadius="50" WidthRequest="250" HeightRequest="30" BackgroundColor="Black" Margin="10">
-                        <Label Text="Room Details" HeightRequest="20" TextColor="White" HorizontalOptions="Center" Margin="5" FontAttributes="None" FontSize="16"/>
-                    </Frame>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="auto"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Label Text="Room Number:" TextColor="Black" FontAttributes="Bold" Grid.Column="0" Margin="0,10,0,0" />
-                        <Entry x:Name="TxtRoomNumber" Grid.Column="1" TextColor="Black" HeightRequest="40" WidthRequest="270" Background="White" Keyboard="Numeric"/>
-                    </Grid>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="auto"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Label Text="Room Size: " TextColor="Black" FontAttributes="Bold" Grid.Column="0" Margin="0,10,0,0" />
-                        <Entry x:Name="TxtRoomSize" Grid.Column="1" TextColor="Black" HeightRequest="40" WidthRequest="270" Background="White" Keyboard="Numeric" HorizontalOptions="End"/>
-                    </Grid>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="auto"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Label Text="Price: " TextColor="Black" FontAttributes="Bold" Grid.Column="0" Margin="0,10,0,0" />
-                        <Entry x:Name="TxtPrice" Grid.Column="1" TextColor="Black" HeightRequest="40" WidthRequest="270" Background="White" Keyboard="Numeric" HorizontalOptions="End"/>
-                    </Grid>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="auto"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Label Text="Descriptions: " TextColor="Black" FontAttributes="Bold" Grid.Column="0" Margin="0,10,0,0" />
-                        <Entry x:Name="TxtDescription" Grid.Column="1" TextColor="Black" HeightRequest="40" WidthRequest="270" Background="White" HorizontalOptions="End"/>
-                    </Grid>
-                </StackLayout>
+        <ScrollView Grid.Row="1">
+            <StackLayout Margin="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Frame CornerRadius="50" WidthRequest="250" HeightRequest="30" BackgroundColor="Black" Margin="10">
+                    <Label Text="Room Details" HeightRequest="20" TextColor="White" HorizontalOptions="Center" Margin="5" FontAttributes="None" FontSize="16"/>
+                </Frame>
+                <Grid ColumnSpacing="10" RowSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
 
-                <StackLayout>
-                    <Frame CornerRadius="50" WidthRequest="250" HeightRequest="30" BackgroundColor="Black" Margin="10">
-                        <Label Text="Amenities" HeightRequest="20" TextColor="White" HorizontalOptions="Center" Margin="5" FontAttributes="None" FontSize="16"/>
-                    </Frame>
-                    <Frame BackgroundColor="LightGray">
-                        <ScrollView HeightRequest="125">
-                            <ListView x:Name="AmenityListView" ItemTapped="AmenityListView_ItemTapped" HasUnevenRows="True" VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
-                                <ListView.ItemTemplate>
-                                    <DataTemplate>
-                                        <ViewCell>
-                                            <Frame MaximumHeightRequest="200" MinimumWidthRequest="100" CornerRadius="20">
-                                                <Grid>
-                                                    <Grid.ColumnDefinitions>
-                                                        <ColumnDefinition Width="*"/>
-                                                        <ColumnDefinition Width="*"/>
-                                                    </Grid.ColumnDefinitions>
-                                                    <Label TextColor="Black" Text="{Binding Name}" FontAttributes="Bold" Grid.Column="0" />
-                                                    <Label TextColor="Black" Text="{Binding Price, StringFormat='Price is ₱{0:N2}'}" Grid.Column="1"/>
-                                                </Grid>
-                                            </Frame>
-                                        </ViewCell>
-                                    </DataTemplate>
-                                </ListView.ItemTemplate>
-                            </ListView>
-                        </ScrollView>
-                    </Frame>
-                </StackLayout>
+                    <Label Text="Room Number:" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" />
+                    <Entry x:Name="TxtRoomNumber" Grid.Row="0" Grid.Column="1" TextColor="Black" HeightRequest="40" Background="White" Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
 
-                <StackLayout>
-                    <Frame CornerRadius="50" WidthRequest="250" HeightRequest="30" BackgroundColor="Black" Margin="10">
-                        <Label Text="Images" HeightRequest="25" TextColor="White" HorizontalOptions="Center" Margin="5" FontAttributes="None" FontSize="16"/>
-                    </Frame>
+                    <Label Text="Room Size:" TextColor="Black" FontAttributes="Bold" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" />
+                    <Entry x:Name="TxtRoomSize" Grid.Row="1" Grid.Column="1" TextColor="Black" HeightRequest="40" Background="White" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
+
+                    <Label Text="Price:" TextColor="Black" FontAttributes="Bold" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" />
+                    <Entry x:Name="TxtPrice" Grid.Row="2" Grid.Column="1" TextColor="Black" HeightRequest="40" Background="White" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
+
+                    <Label Text="Descriptions:" TextColor="Black" FontAttributes="Bold" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" />
+                    <Entry x:Name="TxtDescription" Grid.Row="3" Grid.Column="1" TextColor="Black" HeightRequest="40" Background="White" HorizontalOptions="FillAndExpand"/>
+                </Grid>
+
+                <Frame CornerRadius="50" WidthRequest="250" HeightRequest="30" BackgroundColor="Black" Margin="10">
+                    <Label Text="Amenities" HeightRequest="20" TextColor="White" HorizontalOptions="Center" Margin="5" FontAttributes="None" FontSize="16"/>
+                </Frame>
+                <Frame BackgroundColor="LightGray">
+                    <ScrollView HeightRequest="125">
+                        <ListView x:Name="AmenityListView" ItemTapped="AmenityListView_ItemTapped" HasUnevenRows="True" VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Frame MaximumHeightRequest="200" MinimumWidthRequest="100" CornerRadius="20">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Label TextColor="Black" Text="{Binding Name}" FontAttributes="Bold" Grid.Column="0" />
+                                                <Label TextColor="Black" Text="{Binding Price, StringFormat='Price is ₱{0:N2}'}" Grid.Column="1"/>
+                                            </Grid>
+                                        </Frame>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </ScrollView>
+                </Frame>
+
+                <Frame CornerRadius="50" WidthRequest="250" HeightRequest="30" BackgroundColor="Black" Margin="10">
+                    <Label Text="Images" HeightRequest="25" TextColor="White" HorizontalOptions="Center" Margin="5" FontAttributes="None" FontSize="16"/>
+                </Frame>
+                <ScrollView Orientation="Horizontal">
                     <Frame BackgroundColor="LightGrey" CornerRadius="20">
                         <StackLayout>
-                            <CollectionView x:Name="ImageCollectionView">
+                            <CollectionView x:Name="ImageCollectionView" ItemsLayout="HorizontalList" HeightRequest="250">
                                 <CollectionView.ItemTemplate>
                                     <DataTemplate>
                                         <Frame Padding="10">
                                             <StackLayout>
                                                 <Image HeightRequest="250" Aspect="AspectFill" Source="{Binding ImageSource}" />
-                                                <Label Text="{Binding Description}" FontSize="14" />
                                             </StackLayout>
                                         </Frame>
                                     </DataTemplate>
@@ -110,48 +96,54 @@
                             <Label x:Name="ImageMessage" TextColor="Gray" HorizontalOptions="Center" />
                         </StackLayout>
                     </Frame>
-                </StackLayout>
+                </ScrollView>
 
-                <StackLayout>
-                    <Frame CornerRadius="50" WidthRequest="250" HeightRequest="30" BackgroundColor="Black" Margin="10">
-                        <Label Text="QRCode" HeightRequest="25" TextColor="White" HorizontalOptions="Center" Margin="5" FontAttributes="None" FontSize="16"/>
-                    </Frame>
-                    <Frame BackgroundColor="LightGrey" CornerRadius="20">
-                        <StackLayout>
-                            <CollectionView x:Name="BoardingQRHouseImagesCollectionView" ItemsLayout="HorizontalList" HeightRequest="250">
-                                <CollectionView.ItemTemplate>
-                                    <DataTemplate>
-                                        <StackLayout Padding="10">
-                                            <Image Source="{Binding QrCodeImage}" HeightRequest="250" Aspect="AspectFill" />
-                                        </StackLayout>
-                                    </DataTemplate>
-                                </CollectionView.ItemTemplate>
-                            </CollectionView>
-                            <Label x:Name="QRImageMessage" TextColor="Gray" HorizontalOptions="Center" />
-                        </StackLayout>
-                    </Frame>
-                </StackLayout>
+                <Frame CornerRadius="50" WidthRequest="250" HeightRequest="30" BackgroundColor="Black" Margin="10">
+                    <Label Text="QRCode" HeightRequest="25" TextColor="White" HorizontalOptions="Center" Margin="5" FontAttributes="None" FontSize="16"/>
+                </Frame>
+                <Frame BackgroundColor="LightGrey" CornerRadius="20">
+                    <StackLayout>
+                        <Image x:Name="QRCodeImage" Aspect="AspectFit" />
+                        <Label x:Name="QRImageMessage" TextColor="Gray" HorizontalOptions="Center" />
+                    </StackLayout>
+                </Frame>
 
                 <Frame CornerRadius="50" WidthRequest="250" HeightRequest="30" BackgroundColor="Black" Margin="10">
                     <Label Text="Boarder Details" HeightRequest="25" TextColor="White" HorizontalOptions="Center" Margin="5" FontAttributes="None" FontSize="16"/>
                 </Frame>
-                <StackLayout>
-                    <Frame BackgroundColor="LightGrey" CornerRadius="20">
-                        <StackLayout>
-                            <Label Text="{Binding FirstName}" TextColor="Black" FontSize="16" />
-                            <Label Text="{Binding LastName}" TextColor="Black" FontSize="16" />
-                            <Label Text="{Binding MiddleInitial}" TextColor="Black" FontSize="16" />
-                            <Label Text="{Binding ContactNumber}" TextColor="Black" FontSize="16" />
-                            <Label Text="{Binding Location}" TextColor="Black" FontSize="16" />
-                            <Label Text="{Binding Email}" TextColor="Black" FontSize="16" />
-                        </StackLayout>
-                    </Frame>
+                <StackLayout x:Name="ClientDetailsStackLayout">
+                <Frame BackgroundColor="LightGrey" CornerRadius="20">
+                    <Grid x:Name="ClientDetailsGrid" Padding="10" ColumnSpacing="10" RowSpacing="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Label Text="First Name:" TextColor="Black" FontSize="16" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" />
+                        <Label Text="{Binding FirstName}" TextColor="Black" FontSize="16" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" />
+
+                        <Label Text="Last Name:" TextColor="Black" FontSize="16" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" />
+                        <Label Text="{Binding LastName}" TextColor="Black" FontSize="16" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" />
+
+                        <Label Text="Location:" TextColor="Black" FontSize="16" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" />
+                        <Label Text="{Binding Location}" TextColor="Black" FontSize="16" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" />
+
+                        <Label Text="Email:" TextColor="Black" FontSize="16" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" />
+                        <Label Text="{Binding Email}" TextColor="Black" FontSize="16" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" />
+                    </Grid>
+                </Frame>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
 
         <!-- Static Buttons and Upload Section -->
-        <StackLayout Grid.Row="3" VerticalOptions="CenterAndExpand" Margin="0,0,0,10" Spacing="10">
+        <StackLayout Grid.Row="2" VerticalOptions="CenterAndExpand" Margin="0,0,0,10" Spacing="10">
             <Image x:Name="SelectedImage" HeightRequest="200" WidthRequest="200" Aspect="AspectFill" IsVisible="False" />
             <Label x:Name="StatusMessage" TextColor="Red" FontSize="14" HorizontalOptions="Center" />
             <Grid HorizontalOptions="Center" ColumnSpacing="5">
@@ -168,7 +160,7 @@
         </StackLayout>
 
         <!-- Static Bottom Buttons -->
-        <Grid Grid.Row="4" Margin="10,0,10,10" ColumnSpacing="10" HorizontalOptions="FillAndExpand" VerticalOptions="End" RowSpacing="10">
+        <Grid Grid.Row="3" Margin="10,0,10,10" ColumnSpacing="10" HorizontalOptions="FillAndExpand" VerticalOptions="End" RowSpacing="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
@@ -178,7 +170,5 @@
             <Button Grid.Column="1" FontSize="12" TextColor="White" x:Name="BtnDelete" Text="Delete" Clicked="BtnDelete_Clicked" CornerRadius="20" BackgroundColor="Blue" VerticalOptions="End"/>
             <Button Grid.Column="2" FontSize="12" TextColor="White" x:Name="BtAddAmenities" Text="Amenities" Clicked="BtAddAmenities_Clicked" CornerRadius="20" BackgroundColor="Blue" VerticalOptions="End"/>
         </Grid>
-
     </Grid>
-
 </ContentPage>
